@@ -1,0 +1,133 @@
+/* Dream Digital brand layer for the exact Rayo template. */
+:root {
+  --accent--light: #198bd3;
+  --accent-rgb--light: 25, 139, 211;
+  --additional--light: #7357f6;
+  --additional-rgb--light: 115, 87, 246;
+  --accent--dark: #4bc3ee;
+  --accent-rgb--dark: 75, 195, 238;
+  --additional--dark: #7357f6;
+  --additional-rgb--dark: 115, 87, 246;
+  --pt-purple-rgb: 75, 195, 238;
+  --pt-purple-dark-rgb: 9, 53, 88;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+.mxd-logo {
+  width: 17rem;
+  height: 5.6rem;
+  background: url("../img/dream/logo.png") left center / contain no-repeat;
+}
+
+.mxd-logo__image,
+.mxd-logo__text {
+  display: none;
+}
+
+.divider-image-10 {
+  background-image: linear-gradient(90deg, rgba(5, 10, 18, .12), rgba(5, 10, 18, .3)), url("../img/portfolio/boys-champions-vision-mission.jpeg");
+  background-position: center;
+}
+
+.divider-image-1,
+.divider-image-3,
+.divider-image-8,
+.divider-image-9 {
+  background-image: linear-gradient(90deg, rgba(5, 10, 18, .12), rgba(5, 10, 18, .3)), url("../img/portfolio/boys-champions-strategy-cover.jpeg");
+  background-position: center;
+}
+
+.headline-img-06::before {
+  background-image: url("../img/portfolio/chaise-hero-phone.jpeg");
+}
+
+.headline-img-02::before {
+  background-image: url("../img/portfolio/kuepass-brand-kit.jpeg");
+}
+
+.image-values-1 {
+  background-image: url("../img/portfolio/ambassadors-brand-deck.jpeg");
+}
+
+.image-values-2 {
+  background-image: url("../img/portfolio/chaise-marketplace-screens.jpeg");
+}
+
+.mxd-promo__bg {
+  background-image: linear-gradient(135deg, rgba(25, 139, 211, .9), rgba(115, 87, 246, .84)), url("../img/portfolio/ambassadors-audience-deck.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.preview-image-1 { background-image: url("../img/portfolio/ambassadors-brand-deck.jpeg"); }
+.preview-image-2 { background-image: url("../img/portfolio/chaise-hero-phone.jpeg"); }
+.preview-image-3 { background-image: url("../img/portfolio/boys-champions-strategy-cover.jpeg"); }
+.preview-image-4 { background-image: url("../img/portfolio/chiade-brand-guide.jpeg"); }
+.preview-image-5 { background-image: url("../img/portfolio/kuepass-brand-kit.jpeg"); }
+.preview-image-6 { background-image: url("../img/portfolio/viicsoft-shirts.jpeg"); }
+
+.blog-preview-image-1 {
+  background-image: linear-gradient(180deg, transparent, rgba(5, 10, 18, .16)), url("../img/portfolio/chaise-product-flow.jpeg");
+}
+
+.blog-preview-image-2 {
+  background-image: linear-gradient(180deg, transparent, rgba(5, 10, 18, .16)), url("../img/portfolio/chiade-brand-guide.jpeg");
+}
+
+.blog-preview-image-3 {
+  background-image: linear-gradient(180deg, transparent, rgba(5, 10, 18, .16)), url("../img/portfolio/boys-champions-problem-statement.jpeg");
+}
+
+.mxd-pinned__img,
+.mxd-pinned__img-mobile img,
+.marquee__item img,
+.mxd-hero-05__worksblock > img {
+  object-fit: cover;
+}
+
+.mxd-hero-05-videoblock__video,
+.menu-promo__video {
+  background: url("../img/portfolio/chaise-hero-phone.jpeg") center / cover no-repeat;
+}
+
+.mxd-hero-05-videoblock__video video,
+.menu-promo__video video {
+  visibility: hidden;
+}
+
+.btn-rotating__image,
+.mxd-promo__icon img {
+  object-fit: contain;
+  background: #fff;
+  padding: 1rem;
+}
+
+.mxd-footer__svg-v2 {
+  display: none;
+}
+
+.mxd-footer__fullwidth-text::after {
+  content: "Dream Digital";
+  display: block;
+  width: 100%;
+  color: currentColor;
+  font: normal var(--fw-bold) clamp(6rem, 15vw, 24rem)/.78 var(--_font-accent);
+  letter-spacing: -.075em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-logo {
+    width: 12rem;
+    height: 4.6rem;
+  }
+
+  .mxd-footer__fullwidth-text::after {
+    font-size: clamp(4.5rem, 17vw, 8rem);
+  }
+}
