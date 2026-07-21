@@ -146,3 +146,20 @@ body {
 .main-menu__content > .main-menu__accordion {
   display: none;
 }
+
+.mxd-menu__contain {
+  overflow-y: auto;
+}
+
+@media (max-height: 600px) {
+  .mxd-menu__caption {
+    margin-bottom: 1.2rem;
+  }
+
+  .main-menu__simple .main-menu__link,
+  .main-menu__simple .main-menu__link .btn-caption {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2.8rem;
+  }
+}

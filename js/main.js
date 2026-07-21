@@ -89,12 +89,10 @@ const navigation = `
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Dream Digital home"><img src="assets/images/dream-digital-logo.png" alt="Dream Digital"></a>
       <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="insights.html">Insights</a>
-        <a class="button button-primary" href="contact.html">Start a project <span class="arrow">↗</span></a>
+        <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html">Insights</a><a href="contact.html">Contact Us</a><a href="pricing.html">Pricing</a>
       </nav>
       <div class="nav-actions">
         <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch theme">◐</button>
-        <a class="button button-primary" href="contact.html">Start a project <span class="arrow">↗</span></a>
         <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>

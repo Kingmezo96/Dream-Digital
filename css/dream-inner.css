@@ -79,7 +79,7 @@ html[data-theme="light"] .gradient-text { background-image: linear-gradient(105d
 .brand { display: inline-flex; align-items: center; width: 10.5rem; height: 3rem; position: relative; z-index: 3; overflow: hidden; }
 .brand img { width: 100%; height: 100%; object-fit: contain; object-position: left center; }
 html[data-theme="dark"] .brand img { filter: brightness(1.45) saturate(.85); }
-.nav-links { display: flex; align-items: center; gap: 1.8rem; }
+.nav-links { display: flex; align-items: center; gap: 1.8rem; margin-left: auto; }
 .nav-links > a:not(.button) { color: var(--muted); font-size: .92rem; transition: color .2s; }
 .nav-links > a:hover, .nav-links > a.active { color: var(--text); }
 .nav-links > .button { display: none; }
@@ -485,6 +485,35 @@ html[data-theme="light"] .hero-media::after { background: linear-gradient(90deg,
   .service-row p { grid-column: 1 / -1; padding-left: 2.5rem; }
   .case-summary { grid-template-columns: 1fr 1fr; }
 }
+
+/* Pricing */
+.pricing-hero {
+  min-height: 68svh;
+  display: grid;
+  align-items: end;
+  padding: 10rem 0 5rem;
+  background:
+    radial-gradient(circle at 84% 18%, rgba(75,195,238,.24), transparent 25rem),
+    radial-gradient(circle at 18% 88%, rgba(115,87,246,.22), transparent 30rem);
+}
+.pricing-hero h1 { max-width: 11ch; font-size: clamp(4rem, 10vw, 9.4rem); line-height: .88; }
+.pricing-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+.pricing-option { min-height: 38rem; padding: 1.75rem; display: flex; flex-direction: column; gap: 1.7rem; }
+.pricing-option.featured { border-color: rgba(75,195,238,.45); background: radial-gradient(circle at 90% 0, rgba(25,139,211,.22), transparent 18rem), linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.025)); }
+.pricing-index { color: var(--blue-light); font: 700 .72rem/1 monospace; }
+.pricing-badge { position: absolute; right: 1.3rem; top: 1.2rem; padding: .42rem .7rem; border-radius: 999px; color: #061019; background: var(--blue-light); font-size: .68rem; font-weight: 800; }
+.pricing-option h2 { font-size: clamp(2.2rem, 4vw, 3.7rem); max-width: 9ch; margin-bottom: 1rem; }
+.pricing-option p { color: var(--muted); }
+.pricing-option ul { display: grid; gap: .7rem; margin: 0; padding: 1.4rem 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--muted); }
+.pricing-option li { display: flex; gap: .65rem; }
+.pricing-option li::before { content: "✦"; color: var(--blue-light); }
+.pricing-footer { display: grid; gap: 1rem; margin-top: auto; }
+.pricing-footer strong { font-size: .85rem; color: var(--text); }
+.pricing-note { text-align: center; }
+.pricing-note h2, .pricing-note .lead { max-width: 54rem; margin-inline: auto; }
+.pricing-note .button { margin-top: 1.25rem; }
+@media (max-width: 980px) { .pricing-options { grid-template-columns: 1fr; } .pricing-option { min-height: auto; } }
+@media (max-width: 640px) { .pricing-hero { min-height: 58svh; padding-top: 9rem; } .pricing-option { padding: 1.35rem; } }
 
 /* Rayo-inspired digital digest */
 .sr-only {
