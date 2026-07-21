@@ -131,3 +131,18 @@ body {
     font-size: clamp(4.5rem, 17vw, 8rem);
   }
 }
+.main-menu__simple {
+  display: grid;
+  gap: .2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__simple .main-menu__link {
+  display: inline-flex;
+}
+
+.main-menu__content > .main-menu__accordion {
+  display: none;
+}

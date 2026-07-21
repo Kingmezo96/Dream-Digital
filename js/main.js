@@ -89,7 +89,7 @@ const navigation = `
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Dream Digital home"><img src="assets/images/dream-digital-logo.png" alt="Dream Digital"></a>
       <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="insights.html">Insights</a><a href="faq.html">FAQs</a>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="insights.html">Insights</a>
         <a class="button button-primary" href="contact.html">Start a project <span class="arrow">↗</span></a>
       </nav>
       <div class="nav-actions">
