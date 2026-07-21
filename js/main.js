@@ -122,7 +122,7 @@ function renderChrome() {
   const current = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === current || (current === 'service.html' && href === 'services.html') || (current === 'case-study.html' && href === 'work.html')) link.classList.add('active');
+    if (href === current || (current === 'service.html' && href === 'services.html') || (current === 'case-study.html' && href === 'work.html') || (current.startsWith('insight-') && href === 'insights.html')) link.classList.add('active');
   });
 }
 
@@ -189,11 +189,21 @@ function initFaq() {
 }
 
 function initFilters() {
-  document.querySelectorAll('.filter-button').forEach(button => button.addEventListener('click', () => {
-    document.querySelectorAll('.filter-button').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-filter]').forEach(el => el.classList.remove('active'));
     button.classList.add('active');
     const filter = button.dataset.filter;
     document.querySelectorAll('.work-card').forEach(card => card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.category !== filter));
+  }));
+
+  document.querySelectorAll('[data-news-filter]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-news-filter]').forEach(el => el.classList.remove('active'));
+    button.classList.add('active');
+    const filter = button.dataset.newsFilter;
+    document.querySelectorAll('.news-card').forEach(card => {
+      const categories = (card.dataset.newsCategory || '').split(' ');
+      card.classList.toggle('is-hidden', filter !== 'all' && !categories.includes(filter));
+    });
   }));
 }
 
