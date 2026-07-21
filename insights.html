@@ -3,107 +3,198 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Insights — Dream Digital</title>
-  <meta name="description" content="Current perspectives on Africa's technology, fintech, startups, policy and digital infrastructure, curated by Dream Digital.">
+  <title>Our Digital Digest — Dream Digital</title>
+  <meta name="description" content="Dream Digital insights on African technology, fintech, startups, policy, infrastructure and digital growth.">
   <link rel="icon" href="assets/images/dream-digital-logo.png" type="image/png">
   <link rel="stylesheet" href="css/dream-inner.css">
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body class="digest-page">
   <div data-header></div>
+
   <main id="main">
-    <section class="page-hero insights-hero">
+    <header class="digest-hero">
       <div class="container reveal">
-        <p class="eyebrow">Africa's digital economy, decoded</p>
-        <h1>Signals worth <span class="gradient-text">paying attention to.</span></h1>
-        <p class="lead">A curated view of the policies, capital shifts, infrastructure bets and product decisions shaping technology across Africa.</p>
-      </div>
-    </section>
+        <div class="digest-heading-row">
+          <h1>Our digital <span class="digest-heading-image" aria-hidden="true"><img src="img/portfolio/chaise-product-flow.jpeg" alt=""></span> digest</h1>
+          <p>Clear perspectives on the technology, capital, infrastructure and product decisions shaping Africa's digital future.</p>
+        </div>
 
-    <section class="section-sm">
-      <div class="container">
-        <div class="news-toolbar reveal">
-          <div class="filter-bar" aria-label="Filter insight stories">
-            <button class="filter-button active" type="button" data-news-filter="all">All</button>
-            <button class="filter-button" type="button" data-news-filter="ecosystem">Ecosystem</button>
-            <button class="filter-button" type="button" data-news-filter="fintech">Fintech</button>
-            <button class="filter-button" type="button" data-news-filter="policy">Policy</button>
-            <button class="filter-button" type="button" data-news-filter="startups">Startups</button>
-            <button class="filter-button" type="button" data-news-filter="infrastructure">Infrastructure</button>
+        <div class="digest-hero-meta">
+          <div class="digest-topic-cloud" aria-label="Insight topics">
+            <button class="digest-topic active" type="button" data-news-filter="all">All insights</button>
+            <button class="digest-topic" type="button" data-news-filter="ecosystem">Ecosystem</button>
+            <button class="digest-topic" type="button" data-news-filter="fintech">Fintech</button>
+            <button class="digest-topic" type="button" data-news-filter="policy">Policy</button>
+            <button class="digest-topic" type="button" data-news-filter="startups">Startups</button>
+            <button class="digest-topic" type="button" data-news-filter="infrastructure">Infrastructure</button>
+            <span class="digest-topic digest-topic-static">Product</span>
+            <span class="digest-topic digest-topic-static">Branding</span>
+            <span class="digest-topic digest-topic-static">AI</span>
           </div>
-          <p class="news-updated"><span></span> Curated from TechCabal · Updated 21 July 2026</p>
+          <div class="digest-breadcrumbs"><a href="index.html">Home</a><span>Insights</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="digest-section">
+      <div class="container digest-layout">
+        <div class="digest-posts" data-insight-posts>
+          <article class="digest-featured news-card reveal" data-news-category="ecosystem">
+            <a class="digest-featured-media" href="insight-africa-tech-consolidation.html">
+              <img src="assets/images/hero-africa-digital.jpg" alt="A connected African city representing the continent's growing digital economy">
+              <div class="digest-media-tags"><span>Ecosystem</span><span>Strategy</span><span>Analysis</span></div>
+            </a>
+            <div class="digest-featured-copy">
+              <div class="digest-meta"><span>Ecosystem</span><i>✦</i><span>Dream Digital analysis</span><time datetime="2026-07-21">21 July 2026</time></div>
+              <h2><a href="insight-africa-tech-consolidation.html">Africa's tech market is consolidating. What should builders do next?</a></h2>
+              <p>Funding held steady in the first half of 2026, but it flowed into fewer, larger and more mature companies. We translate the signal into practical choices for founders and digital teams.</p>
+              <a class="digest-read-link" href="insight-africa-tech-consolidation.html">Read our briefing <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="digest-row news-card reveal" data-news-category="policy fintech">
+            <a class="digest-row-media" href="https://techcabal.com/2026/07/21/nigerias-airtime-lending-battle-ends-with-a-split-decision/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/project-fintech.jpg" alt="Fintech product interface on a mobile phone">
+              <span class="digest-hover-eye" aria-hidden="true">↗</span>
+            </a>
+            <div class="digest-row-copy">
+              <div class="digest-meta"><span>Policy</span><i>✦</i><span>Fintech</span><time datetime="2026-07-21">21 July 2026</time></div>
+              <h3><a href="https://techcabal.com/2026/07/21/nigerias-airtime-lending-battle-ends-with-a-split-decision/" target="_blank" rel="noopener noreferrer">Nigerian court upholds digital lending rules but rejects parallel telecom licensing</a></h3>
+              <p>The ruling restores consumer-lending oversight while keeping telecom licensing with the NCC.</p>
+              <a class="digest-round-link" href="https://techcabal.com/2026/07/21/nigerias-airtime-lending-battle-ends-with-a-split-decision/" target="_blank" rel="noopener noreferrer" aria-label="Read the TechCabal story">↗</a>
+            </div>
+          </article>
+
+          <article class="digest-row news-card reveal" data-news-category="fintech policy">
+            <a class="digest-row-media" href="https://techcabal.com/2026/07/20/nigerias-central-bank-is-rewriting-the-rules-for-fintech-growth/" target="_blank" rel="noopener noreferrer">
+              <img src="img/portfolio/chaise-marketplace-screens.jpeg" alt="Digital marketplace interfaces shown on two mobile devices">
+              <span class="digest-hover-eye" aria-hidden="true">↗</span>
+            </a>
+            <div class="digest-row-copy">
+              <div class="digest-meta"><span>Fintech</span><i>✦</i><span>Policy</span><time datetime="2026-07-20">20 July 2026</time></div>
+              <h3><a href="https://techcabal.com/2026/07/20/nigerias-central-bank-is-rewriting-the-rules-for-fintech-growth/" target="_blank" rel="noopener noreferrer">Nigeria's central bank is rewriting the rules for fintech growth</a></h3>
+              <p>Market concentration, ownership transparency and operational resilience move to the centre of the next payments era.</p>
+              <a class="digest-round-link" href="https://techcabal.com/2026/07/20/nigerias-central-bank-is-rewriting-the-rules-for-fintech-growth/" target="_blank" rel="noopener noreferrer" aria-label="Read the TechCabal story">↗</a>
+            </div>
+          </article>
+
+          <article class="digest-row news-card reveal" data-news-category="startups ecosystem">
+            <a class="digest-row-media" href="https://techcabal.com/2026/07/20/launch-africa-h1-2026/" target="_blank" rel="noopener noreferrer">
+              <img src="img/portfolio/kuepass-brand-kit.jpeg" alt="Kuepass identity system and branded stationery">
+              <span class="digest-hover-eye" aria-hidden="true">↗</span>
+            </a>
+            <div class="digest-row-copy">
+              <div class="digest-meta"><span>Startups</span><i>✦</i><span>Capital</span><time datetime="2026-07-20">20 July 2026</time></div>
+              <h3><a href="https://techcabal.com/2026/07/20/launch-africa-h1-2026/" target="_blank" rel="noopener noreferrer">Why Launch Africa keeps writing early-stage cheques despite the slowdown</a></h3>
+              <p>Early-stage conviction remains, but it now comes with sharper attention to unit economics, currency risk and credible exits.</p>
+              <a class="digest-round-link" href="https://techcabal.com/2026/07/20/launch-africa-h1-2026/" target="_blank" rel="noopener noreferrer" aria-label="Read the TechCabal story">↗</a>
+            </div>
+          </article>
+
+          <article class="digest-row news-card reveal" data-news-category="policy infrastructure">
+            <a class="digest-row-media" href="https://techcabal.com/2026/07/20/south-africa-wants-every-sim-card-to-become-a-trusted-digital-id/" target="_blank" rel="noopener noreferrer">
+              <img src="img/portfolio/chaise-hero-phone.jpeg" alt="A mobile digital platform displayed on a phone">
+              <span class="digest-hover-eye" aria-hidden="true">↗</span>
+            </a>
+            <div class="digest-row-copy">
+              <div class="digest-meta"><span>Policy</span><i>✦</i><span>Identity</span><time datetime="2026-07-20">20 July 2026</time></div>
+              <h3><a href="https://techcabal.com/2026/07/20/south-africa-wants-every-sim-card-to-become-a-trusted-digital-id/" target="_blank" rel="noopener noreferrer">South Africa wants every SIM card to become a trusted digital ID</a></h3>
+              <p>Real-time identity checks could strengthen fraud prevention, banking security and cybercrime investigations.</p>
+              <a class="digest-round-link" href="https://techcabal.com/2026/07/20/south-africa-wants-every-sim-card-to-become-a-trusted-digital-id/" target="_blank" rel="noopener noreferrer" aria-label="Read the TechCabal story">↗</a>
+            </div>
+          </article>
+
+          <article class="digest-row news-card reveal" data-news-category="infrastructure ecosystem">
+            <a class="digest-row-media" href="https://techcabal.com/2026/07/16/schneiders-ai-bet-starts-with-rebuilding-africas-electricity-grid/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/project-agritech.jpg" alt="Technology infrastructure connecting communities and industries">
+              <span class="digest-hover-eye" aria-hidden="true">↗</span>
+            </a>
+            <div class="digest-row-copy">
+              <div class="digest-meta"><span>AI</span><i>✦</i><span>Infrastructure</span><time datetime="2026-07-16">16 July 2026</time></div>
+              <h3><a href="https://techcabal.com/2026/07/16/schneiders-ai-bet-starts-with-rebuilding-africas-electricity-grid/" target="_blank" rel="noopener noreferrer">Africa's electricity grid is becoming the next AI battleground</a></h3>
+              <p>The continent's AI opportunity increasingly depends on reliable power, modern grids and compute-ready infrastructure.</p>
+              <a class="digest-round-link" href="https://techcabal.com/2026/07/16/schneiders-ai-bet-starts-with-rebuilding-africas-electricity-grid/" target="_blank" rel="noopener noreferrer" aria-label="Read the TechCabal story">↗</a>
+            </div>
+          </article>
+
+          <p class="digest-source-note">Reporting and headlines are credited to TechCabal. Summaries and analysis are written by Dream Digital.</p>
         </div>
 
-        <div class="posts">
-          <a class="post news-card news-card-featured reveal" data-news-category="ecosystem" href="insight-africa-tech-consolidation.html">
-            <div class="post-meta"><span>Ecosystem</span><span>21 Jul 2026</span></div>
-            <div class="post-body">
-              <p class="post-label">Dream Digital analysis</p>
-              <h2>Africa's tech market is consolidating. What should builders do next?</h2>
-              <p class="post-summary">Funding held steady in the first half of 2026, but it flowed into fewer, larger and more mature companies. We translate the signal into practical choices for founders and digital teams.</p>
+        <aside class="digest-sidebar reveal">
+          <section class="digest-widget digest-search-widget">
+            <label class="sr-only" for="digest-search">Search insights</label>
+            <input id="digest-search" type="search" placeholder="Search" data-insight-search>
+            <span aria-hidden="true">⌕</span>
+          </section>
+
+          <section class="digest-widget">
+            <h2>Categories</h2>
+            <div class="digest-category-list">
+              <button type="button" data-news-filter="ecosystem"><span>Ecosystem</span><span>02</span></button>
+              <button type="button" data-news-filter="fintech"><span>Fintech</span><span>02</span></button>
+              <button type="button" data-news-filter="policy"><span>Policy</span><span>03</span></button>
+              <button type="button" data-news-filter="startups"><span>Startups</span><span>01</span></button>
+              <button type="button" data-news-filter="infrastructure"><span>Infrastructure</span><span>02</span></button>
             </div>
-            <div class="post-source"><span>Read our briefing</span><span class="arrow">↗</span></div>
+          </section>
+
+          <section class="digest-widget">
+            <h2>Latest posts</h2>
+            <div class="digest-latest-list">
+              <a href="insight-africa-tech-consolidation.html">
+                <img src="assets/images/hero-africa-digital.jpg" alt="">
+                <span><small>✦ Ecosystem</small><strong>Africa's tech market is consolidating</strong></span>
+              </a>
+              <a href="https://techcabal.com/2026/07/20/nigerias-central-bank-is-rewriting-the-rules-for-fintech-growth/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/project-fintech.jpg" alt="">
+                <span><small>✦ Fintech</small><strong>New rules for fintech growth</strong></span>
+              </a>
+              <a href="https://techcabal.com/2026/07/16/schneiders-ai-bet-starts-with-rebuilding-africas-electricity-grid/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/project-agritech.jpg" alt="">
+                <span><small>✦ Infrastructure</small><strong>The grid beneath Africa's AI ambitions</strong></span>
+              </a>
+            </div>
+          </section>
+
+          <a class="digest-ad" href="services.html">
+            <img src="img/portfolio/chaise-business-screen.jpeg" alt="Dream Digital product design work">
+            <span>Dream Digital services</span>
+            <strong>From insight to execution.</strong>
+            <i>Explore our capabilities ↗</i>
           </a>
 
-          <a class="post news-card reveal" data-news-category="policy fintech" href="https://techcabal.com/2026/07/21/nigerias-airtime-lending-battle-ends-with-a-split-decision/" target="_blank" rel="noopener noreferrer">
-            <div class="post-meta"><span>Policy · Fintech</span><span>21 Jul 2026</span></div>
-            <div class="post-body">
-              <h3>Nigerian court upholds digital lending rules but rejects parallel telecom licensing</h3>
-              <p class="post-summary">The ruling restores consumer-lending oversight while keeping telecom licensing with the NCC—a split decision for Nigeria's large airtime and data credit market.</p>
-            </div>
-            <div class="post-source"><span>Source: TechCabal</span><span class="arrow">↗</span></div>
-          </a>
+          <section class="digest-widget">
+            <h2>About</h2>
+            <p>Dive into the trends, industry shifts and practical decisions shaping Africa's digital economy.</p>
+          </section>
 
-          <a class="post news-card reveal" data-news-category="fintech policy" href="https://techcabal.com/2026/07/20/nigerias-central-bank-is-rewriting-the-rules-for-fintech-growth/" target="_blank" rel="noopener noreferrer">
-            <div class="post-meta"><span>Fintech · Policy</span><span>20 Jul 2026</span></div>
-            <div class="post-body">
-              <h3>Nigeria's central bank is rewriting the rules for fintech growth</h3>
-              <p class="post-summary">New proposals put market concentration, ownership transparency and operational resilience at the centre of the next phase of payments growth.</p>
-            </div>
-            <div class="post-source"><span>Source: TechCabal</span><span class="arrow">↗</span></div>
-          </a>
-
-          <a class="post news-card reveal" data-news-category="startups ecosystem" href="https://techcabal.com/2026/07/20/launch-africa-h1-2026/" target="_blank" rel="noopener noreferrer">
-            <div class="post-meta"><span>Startups</span><span>20 Jul 2026</span></div>
-            <div class="post-body">
-              <h3>Why Launch Africa keeps writing early-stage cheques despite market slowdown</h3>
-              <p class="post-summary">As first-cheque activity contracts, the investor is still backing early-stage teams—but with closer attention to unit economics, currency risk and credible exits.</p>
-            </div>
-            <div class="post-source"><span>Source: TechCabal</span><span class="arrow">↗</span></div>
-          </a>
-
-          <a class="post news-card reveal" data-news-category="policy infrastructure" href="https://techcabal.com/2026/07/20/south-africa-wants-every-sim-card-to-become-a-trusted-digital-id/" target="_blank" rel="noopener noreferrer">
-            <div class="post-meta"><span>Policy · Identity</span><span>20 Jul 2026</span></div>
-            <div class="post-body">
-              <h3>South Africa wants every SIM card to become a trusted digital ID</h3>
-              <p class="post-summary">Proposed real-time identity checks could make SIM registration a stronger layer for fraud prevention, banking security and cybercrime investigations.</p>
-            </div>
-            <div class="post-source"><span>Source: TechCabal</span><span class="arrow">↗</span></div>
-          </a>
-
-          <a class="post news-card reveal" data-news-category="infrastructure ecosystem" href="https://techcabal.com/2026/07/16/schneiders-ai-bet-starts-with-rebuilding-africas-electricity-grid/" target="_blank" rel="noopener noreferrer">
-            <div class="post-meta"><span>AI · Infrastructure</span><span>16 Jul 2026</span></div>
-            <div class="post-body">
-              <h3>Schneider Electric says Africa's electricity grid is the next AI battleground</h3>
-              <p class="post-summary">The continent's AI opportunity increasingly depends on the physical systems beneath it: reliable power, modern grids and infrastructure built for rising compute demand.</p>
-            </div>
-            <div class="post-source"><span>Source: TechCabal</span><span class="arrow">↗</span></div>
-          </a>
-        </div>
-
-        <p class="news-credit">Headlines and reporting are credited to TechCabal. Summaries are written by Dream Digital; open a source story to read the original reporting.</p>
+          <section class="digest-widget digest-ecosystem">
+            <h2>Ecosystem</h2>
+            <p>Follow Dream Digital and get our latest work, thinking and studio updates.</p>
+            <a href="mailto:dreamdigitalafrica@gmail.com">Email <span>↗</span></a>
+            <a href="tel:+2347037078046">Call us <span>↗</span></a>
+            <a href="work.html">Portfolio <span>↗</span></a>
+          </section>
+        </aside>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container cta reveal">
-        <p class="eyebrow">Turn signals into action</p>
-        <h2>What does the shift mean for you?</h2>
-        <p class="lead">We help leadership teams translate market change into clearer products, stronger brands and practical technology decisions.</p>
-        <a class="button button-primary button-lg" href="contact.html">Start a conversation <span class="arrow">↗</span></a>
+    <section class="digest-promo-section">
+      <div class="container">
+        <div class="digest-promo reveal">
+          <div class="digest-promo-orb digest-promo-orb-one"><img src="img/portfolio/chaise-product-flow.jpeg" alt=""></div>
+          <div class="digest-promo-orb digest-promo-orb-two"><img src="img/portfolio/ambassadors-brand-deck.jpeg" alt=""></div>
+          <div class="digest-promo-copy">
+            <span class="digest-promo-icon"><img src="assets/images/dream-digital-logo.png" alt=""></span>
+            <h2>Let's talk about your project!</h2>
+            <a class="button button-primary button-lg" href="contact.html">Contact us <span class="arrow">↗</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
   <div data-footer></div>
 </body>
 </html>
