@@ -85,15 +85,23 @@ const services = {
 
 const navigation = `
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" id="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Dream Digital home"><img src="assets/images/dream-digital-logo.png" alt="Dream Digital"></a>
-      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html">Insights</a><a href="contact.html">Contact Us</a><a href="pricing.html">Pricing</a>
+  <header class="site-header template-site-header" id="site-header">
+    <div class="container nav template-nav">
+      <a class="brand template-brand" href="index.html" aria-label="Dream Digital home"><img src="img/dream/logo.png" alt="Dream Digital"></a>
+      <nav class="nav-links template-menu-panel" id="nav-links" aria-label="Primary navigation">
+        <span class="template-menu-caption">Dream Digital — strategy, design and technology for what’s next.</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Works</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="pricing.html">Pricing</a>
       </nav>
       <div class="nav-actions">
         <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch theme">◐</button>
-        <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        <a class="button button-primary header-cta" href="contact.html">Start a project <span class="arrow">↗</span></a>
+        <button class="icon-button menu-button template-menu-button" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
       </div>
     </div>
   </header>`;
@@ -126,7 +134,7 @@ function renderChrome() {
 
 function initTheme() {
   const saved = localStorage.getItem('dream-theme');
-  document.documentElement.dataset.theme = saved || 'dark';
+  document.documentElement.dataset.theme = saved || document.documentElement.dataset.theme || 'light';
   const toggle = document.getElementById('theme-toggle');
   toggle?.addEventListener('click', () => {
     const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -144,10 +152,16 @@ function initNavigation() {
   addEventListener('scroll', onScroll, { passive: true });
   toggle?.addEventListener('click', () => {
     const open = menu.classList.toggle('open');
+    document.body.classList.toggle('menu-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? '×' : '☰';
     document.body.style.overflow = open ? 'hidden' : '';
   });
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }));
 }
 
 function initReveal() {

@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dreamdigital.africa/sitemap.xml
-
+Sitemap: https://dream-digital-africa.vercel.app/sitemap.xml
