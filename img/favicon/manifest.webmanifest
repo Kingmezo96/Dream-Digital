@@ -1,11 +1,11 @@
 {
-  "name": "Rayo - Digital Agency & Personal Portfolio HTML Template",
-  "short_name": "Rayo",
+  "name": "Dream Digital",
+  "short_name": "Dream Digital",
   "icons": [
     { "src": "/img/favicon/android-icon-192.png", "type": "image/png", "sizes": "192x192" },
     { "src": "/img/favicon/android-icon-512.png", "type": "image/png", "sizes": "512x512" }
   ],
-  "theme_color": "#efefef",
-  "background_color": "#efefef",
+  "theme_color": "#198bd3",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
