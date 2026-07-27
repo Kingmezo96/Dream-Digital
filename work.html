@@ -1,208 +1,657 @@
-<!doctype html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Work — Dream Digital</title>
-  <meta name="description" content="Explore Dream Digital work across product design, brand identity, packaging, strategy and creative campaigns.">
-  <link rel="icon" href="assets/images/dream-digital-logo.png" type="image/png">
-  <link rel="stylesheet" href="css/dream-rayo.css">
-  <link rel="stylesheet" href="css/dream-inner.css">
-  <script defer src="js/main.js"></script>
-</head>
-<body class="rayo-inner-page works-page">
-  <div data-header></div>
-  <main id="main">
-    <section class="page-hero works-rayo-hero">
-      <div class="container reveal">
-        <p class="eyebrow">Selected work</p>
-        <h1>Projects<br><span class="gradient-text">to explore.</span></h1>
-        <p class="lead">Product experiences, brand systems and strategic communications created for ambitious organisations and meaningful ideas.</p>
-      </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-    <section class="section-sm project-detail-strip">
-      <div class="container project-detail-card reveal">
-        <div class="project-detail-copy">
-          <p class="eyebrow">Featured project</p>
-          <h2>Chaise talent marketplace.</h2>
-          <p class="lead">A mobile-first marketplace experience for connecting African professionals with businesses through clearer discovery, stronger trust signals and a more confident product story.</p>
-          <div class="project-detail-meta" aria-label="Featured project details">
-            <span><small>Client</small><strong>Chaise</strong></span>
-            <span><small>Service</small><strong>Product Design, UI/UX, Web</strong></span>
-            <span><small>Focus</small><strong>Marketplace journeys</strong></span>
-            <span><small>Team</small><strong>Dream Digital</strong></span>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      localStorage.setItem('template.theme', 'light');
+      document.documentElement.setAttribute('color-scheme', 'light');
+    </script>
+
+    <title>Works — Dream Digital</title>
+
+    <meta name="description" content="Explore Dream Digital work across product design, brand identity, packaging, strategy, worship flyers and creative campaigns.">
+    <meta name="keywords" content="Dream Digital works, portfolio, branding, product design, logos, packaging, worship flyers, avatars">
+    <meta name="author" content="Dream Digital">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <link rel="icon" href="img/dream/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/dream/logo.png">
+
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:title" content="Works — Dream Digital">
+    <meta property="og:description" content="A curated Dream Digital portfolio of product experiences, identity systems, packaging, worship visuals and custom creative assets.">
+    <meta property="og:url" content="https://dream-digital-africa.vercel.app/work.html">
+    <meta property="og:image" content="https://dream-digital-africa.vercel.app/img/portfolio/chaise-marketplace-screens.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dream-rayo.css">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
+    <meta name="msapplication-navbutton-color" content="#161616">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
+
+  <body>
+
+    <!-- Loader Start -->
+    <div id="loader" class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__content">
+          <div class="loader__count">
+            <span class="count__text">0</span>
+            <span class="count__percent">%</span>
           </div>
-          <a class="button button-primary button-lg" href="case-study.html">Open project story <span class="arrow">↗</span></a>
-        </div>
-        <div class="project-detail-media">
-          <img src="img/portfolio/chaise-marketplace-screens.jpeg" loading="lazy" alt="Chaise mobile marketplace screens designed by Dream Digital">
-          <img src="img/portfolio/chaise-hero-phone.jpeg" loading="lazy" alt="Chaise hero mobile interface">
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Loader End -->
 
-    <section class="section-sm">
-      <div class="container">
-        <div class="filter-bar" aria-label="Filter projects">
-          <button class="filter-button active" data-filter="all">All work</button>
-          <button class="filter-button" data-filter="product">Product</button>
-          <button class="filter-button" data-filter="brand">Brand</button>
-          <button class="filter-button" data-filter="strategy">Strategy</button>
-          <button class="filter-button" data-filter="campaign">Campaigns</button>
-        </div>
-        <div class="work-grid works-rayo-grid">
-          <a id="chaise" class="project work-card reveal" data-category="product" href="case-study.html">
-            <img src="img/portfolio/chaise-hero-phone.jpeg" loading="lazy" alt="Chaise mobile talent marketplace">
-            <span class="project-metric"><strong>Chaise</strong><span>featured case study</span></span>
-            <div class="project-content"><h3>Chaise</h3><div class="tags"><span class="tag">Marketplace</span><span class="tag">Product Design</span><span class="tag">Web</span></div></div>
-          </a>
-          <a id="ambassadors" class="project work-card reveal" data-category="brand" href="#story-ambassadors">
-            <img src="img/portfolio/ambassadors-brand-deck.jpeg" loading="lazy" alt="The Ambassadors DOTA brand and impact deck">
-            <span class="project-metric"><strong>TAD</strong><span>brand and impact</span></span>
-            <div class="project-content"><h3>The Ambassadors DOTA</h3><div class="tags"><span class="tag">Brand Strategy</span><span class="tag">Editorial</span><span class="tag">Nonprofit</span></div></div>
-          </a>
-          <a id="boys-champions" class="project work-card reveal" data-category="strategy" href="#story-boys-champions">
-            <img src="img/portfolio/boys-champions-strategy-cover.jpeg" loading="lazy" alt="Boys Champions organisational strategy cover">
-            <span class="project-metric"><strong>2025–30</strong><span>organisational strategy</span></span>
-            <div class="project-content"><h3>Boys Champions</h3><div class="tags"><span class="tag">Strategy</span><span class="tag">Social Impact</span><span class="tag">Communications</span></div></div>
-          </a>
-          <a id="chiade" class="project work-card reveal" data-category="brand" href="#story-brand-applications">
-            <img src="img/portfolio/chiade-brand-guide.jpeg" loading="lazy" alt="Chiade fashion brand guide">
-            <span class="project-metric"><strong>Chiade</strong><span>identity system</span></span>
-            <div class="project-content"><h3>Chiade</h3><div class="tags"><span class="tag">Fashion</span><span class="tag">Identity</span><span class="tag">Brand Guide</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="product" href="#story-product-design">
-            <img src="img/portfolio/custom/product-design/reeves-africa-website.jpg" loading="lazy" alt="Reeves for Africa website shown on a laptop">
-            <span class="project-metric"><strong>Digital</strong><span>web and mobile products</span></span>
-            <div class="project-content"><h3>Product Interfaces</h3><div class="tags"><span class="tag">UI/UX</span><span class="tag">Web Design</span><span class="tag">Mobile</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="brand" href="#story-brand-identities">
-            <img src="img/portfolio/custom/logos/micos-pastries.jpg" loading="lazy" alt="Micos Pastries and Cakes brand identity">
-            <span class="project-metric"><strong>Identity</strong><span>distinctive brand systems</span></span>
-            <div class="project-content"><h3>Logos</h3><div class="tags"><span class="tag">Logo Design</span><span class="tag">Identity</span><span class="tag">Art Direction</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="brand" href="#story-packaging">
-            <img src="img/portfolio/custom/product-packaging/ripples-banga-spice.jpg" loading="lazy" alt="Ripples of Flavour Banga Spice Mix packaging">
-            <span class="project-metric"><strong>Packaging</strong><span>designed for the shelf</span></span>
-            <div class="project-content"><h3>Product Packaging</h3><div class="tags"><span class="tag">Packaging</span><span class="tag">Editorial</span><span class="tag">Print</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="brand" href="#story-nxtdoor">
-            <img src="img/portfolio/custom/brand-mockups/nxtdoor-guidelines.png" loading="lazy" alt="Nxtdoor brand guidelines cover">
-            <span class="project-metric"><strong>Nxtdoor</strong><span>brand guidelines</span></span>
-            <div class="project-content"><h3>Nxtdoor</h3><div class="tags"><span class="tag">Brand Guide</span><span class="tag">Logo System</span><span class="tag">Identity</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="brand" href="#story-fashion-brands">
-            <img src="img/portfolio/custom/brand-mockups/dreams-kulture-bags.jpg" loading="lazy" alt="Dreams Kulture branded shopping bags">
-            <span class="project-metric"><strong>Fashion</strong><span>identity in context</span></span>
-            <div class="project-content"><h3>Brand Mockups</h3><div class="tags"><span class="tag">Fashion</span><span class="tag">Applications</span><span class="tag">Brand Design</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="campaign" href="#story-campaigns">
-            <img src="img/portfolio/custom/worship/church-afro-gospel.jpg" loading="lazy" alt="Afro Gospel Sunday campaign poster">
-            <span class="project-metric"><strong>Campaigns</strong><span>bold social storytelling</span></span>
-            <div class="project-content"><h3>Worship &amp; Church Flyers</h3><div class="tags"><span class="tag">Worship</span><span class="tag">Social Media</span><span class="tag">Event Design</span></div></div>
-          </a>
-          <a id="kuepass" class="project work-card reveal" data-category="brand" href="#story-brand-applications">
-            <img src="img/portfolio/kuepass-brand-kit.jpeg" loading="lazy" alt="Kuepass brand identity kit">
-            <span class="project-metric"><strong>Kuepass</strong><span>brand system</span></span>
-            <div class="project-content"><h3>Kuepass</h3><div class="tags"><span class="tag">Mobility</span><span class="tag">Identity</span><span class="tag">Merchandise</span></div></div>
-          </a>
-          <a class="project work-card reveal" data-category="brand" href="#story-avatars">
-            <img src="img/portfolio/custom/logos/akua-bae-logo.png" loading="lazy" alt="Akua Bae illustrated character logo">
-            <span class="project-metric"><strong>Characters</strong><span>custom digital expression</span></span>
-            <div class="project-content"><h3>Custom Avatars</h3><div class="tags"><span class="tag">Illustration</span><span class="tag">Characters</span><span class="tag">Digital</span></div></div>
-          </a>
+    <!-- Menu & Menu Hamburger Start -->
+    <nav class="mxd-nav__wrap" data-lenis-prevent="">
+      <div class="mxd-nav__contain loading__fade">
+        <a href="#0" class="mxd-nav__hamburger" aria-label="Menu">
+          <div class="hamburger__base"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </a>
+      </div>
+
+      <div class="mxd-menu__wrapper">
+        <div class="mxd-menu__base"></div>
+        <div class="mxd-menu__contain">
+          <div class="mxd-menu__inner">
+            <div class="mxd-menu__left">
+              <p class="mxd-menu__caption menu-fade-in">✦ Strategy, design and technology<br>for the next era of growth</p>
+              <div class="main-menu">
+                <nav class="main-menu__content">
+                  <ul class="main-menu__simple" aria-label="Primary navigation">
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="index.html"><span class="btn-caption">Home</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="about.html"><span class="btn-caption">About Us</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="services.html"><span class="btn-caption">Services</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="work.html"><span class="btn-caption">Works</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="insights.html"><span class="btn-caption">Insights</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="contact.html"><span class="btn-caption">Contact Us</span></a></li>
+                    <li class="main-menu__item"><a class="main-menu__link btn btn-anim" href="pricing.html"><span class="btn-caption">Pricing</span></a></li>
+                  </ul>
+                  <ul id="main-menu" class="main-menu__accordion">
+                    <li class="main-menu__item"></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="mxd-menu__right">
+              <div class="menu-promo">
+                <div class="menu-promo__content">
+                  <p class="menu-promo__caption menu-fade-in">Hello from Dream Digital.<br>We turn strategy, design and technology into measurable growth.</p>
+                  <div class="menu-promo__video" aria-hidden="true">
+                    <video class="menu-video" id="inner-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/portfolio/chaise-hero-phone.jpeg">
+                      <source type="video/mp4" src="video/540x310_video.mp4">
+                      <source type="video/webm" src="video/540x310_video.webm">
+                      <source type="video/ogv" src="video/540x310_video.ogv">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mxd-menu__data menu-fade-in">
+              <p class="t-xsmall">Built for what’s next</p>
+              <p class="t-xsmall"><i class="ph ph-copyright"></i>2026</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </nav>
+    <!-- Menu & Menu Hamburger End -->
 
-    <section class="works-marquee" aria-label="Dream Digital capabilities">
-      <div><span>Strategy</span><i>✦</i><span>Identity</span><i>✦</i><span>Product</span><i>✦</i><span>Technology</span><i>✦</i><span>Campaigns</span><i>✦</i><span>Experience</span></div>
-    </section>
-
-    <section id="branding-designs" class="section-sm collection-hub">
-      <div class="container reveal">
-        <p class="eyebrow">Branding &amp; designs</p>
-        <div class="section-heading"><h2>Browse the custom collection.</h2><p class="lead">Explore each specialist design folder—from logo systems and packaging to worship graphics, custom avatars and campaign-ready mockups.</p></div>
-        <nav class="collection-nav" aria-label="Branding and design collections">
-          <a class="collection-link" href="#story-brand-identities"><span>01</span><strong>Logos</strong></a>
-          <a class="collection-link" href="#story-campaigns"><span>02</span><strong>Worship</strong></a>
-          <a class="collection-link" href="#story-avatars"><span>03</span><strong>Custom Avatars</strong></a>
-          <a class="collection-link" href="#story-packaging"><span>04</span><strong>Product Packaging</strong></a>
-          <a class="collection-link" href="#story-fashion-brands"><span>05</span><strong>Brand Mockups</strong></a>
-          <a class="collection-link" href="#story-product-design"><span>06</span><strong>Product Design</strong></a>
-        </nav>
+    <!-- Header Start -->
+    <header id="header" class="mxd-header">
+      <div class="mxd-header__logo loading__fade">
+        <a href="index.html" class="mxd-logo" aria-label="Dream Digital home">
+          <span class="mxd-logo__text">Dream<br>Digital</span>
+        </a>
       </div>
-    </section>
 
-    <section class="section portfolio-stories">
-      <div class="container">
-        <article id="story-ambassadors" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Brand and audience strategy</p><h2>The Ambassadors DOTA</h2><p class="lead">A vivid identity and impact narrative designed to help an empowerment platform communicate its purpose, audience and promise with confidence.</p></div>
-          <div class="portfolio-gallery two-up"><img src="img/portfolio/ambassadors-brand-deck.jpeg" loading="lazy" alt="The Ambassadors DOTA brand and impact deck"><img src="img/portfolio/ambassadors-audience-deck.jpeg" loading="lazy" alt="The Ambassadors DOTA audience strategy deck"></div>
-        </article>
-
-        <article id="story-boys-champions" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Organisational strategy</p><h2>Boys Champions</h2><p class="lead">A complete strategic narrative spanning the organisation’s context, vision, mission, delivery priorities and five-year direction.</p></div>
-          <div class="portfolio-gallery"><img src="img/portfolio/boys-champions-strategy.jpeg" loading="lazy" alt="Boys Champions organisational strategy cover"><img src="img/portfolio/boys-champions-executive-summary.jpeg" loading="lazy" alt="Boys Champions executive summary"><img src="img/portfolio/boys-champions-problem-statement.jpeg" loading="lazy" alt="Boys Champions problem statement"><img src="img/portfolio/boys-champions-vision-mission.jpeg" loading="lazy" alt="Boys Champions vision and mission"><img src="img/portfolio/boys-champions-delivery-plan.jpeg" loading="lazy" alt="Boys Champions delivery plan"></div>
-        </article>
-
-        <article class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Digital product experience</p><h2>Chaise</h2><p class="lead">A responsive talent marketplace connecting professionals and businesses through clear journeys, purposeful interaction design and a distinctive product voice.</p></div>
-          <div class="portfolio-gallery"><img src="img/portfolio/chaise-hero-phone.jpeg" loading="lazy" alt="Chaise mobile marketplace hero"><img src="img/portfolio/chaise-marketplace-screens.jpeg" loading="lazy" alt="Chaise marketplace screens"><img src="img/portfolio/chaise-business-screen.jpeg" loading="lazy" alt="Chaise business experience"><img src="img/portfolio/chaise-product-flow.jpeg" loading="lazy" alt="Chaise professional marketplace flow"></div>
-        </article>
-
-        <article id="story-product-design" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">UI/UX and web development</p><h2>Product Interfaces</h2><p class="lead">A range of responsive product concepts shaped around clear journeys, confident visual systems and intuitive interaction across web and mobile.</p></div>
-          <div class="portfolio-gallery product-wall"><img src="img/portfolio/custom/product-design/reeves-africa-website.jpg" loading="lazy" alt="Reeves for Africa responsive website"><img src="img/portfolio/custom/product-design/sushi-app-ui.jpg" loading="lazy" alt="Sushi ordering mobile app interface"><img src="img/portfolio/custom/product-design/property-app-ui.jpg" loading="lazy" alt="Property mobile app onboarding and sign in screens"><img src="img/portfolio/custom/product-design/shopping-app-ui.jpg" loading="lazy" alt="Shopping app product and messaging screens"><img src="img/portfolio/custom/product-design/furniture-web-ui.jpg" loading="lazy" alt="Furniture ecommerce webpage concept"></div>
-        </article>
-
-        <article id="story-brand-identities" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Logo and identity design</p><h2>Logos</h2><p class="lead">Distinctive marks for food, fashion, furniture, photography and lifestyle brands—each designed to be memorable, ownable and ready to grow.</p></div>
-          <div class="portfolio-gallery logo-wall"><img src="img/portfolio/custom/logos/micos-pastries.jpg" loading="lazy" alt="Micos Pastries and Cakes identity"><img src="img/portfolio/custom/logos/cado-gallery.jpg" loading="lazy" alt="Cado Gallery jewellery identity"><img src="img/portfolio/custom/logos/bow-furniture.jpg" loading="lazy" alt="BOW Furniture identity"><img src="img/portfolio/custom/logos/bartonbay-logo.jpg" loading="lazy" alt="Bartonbay brand mark"><img src="img/portfolio/custom/logos/wrgo-imagery-logo.png" loading="lazy" alt="Wrgo Imagery identity"><img src="img/portfolio/custom/logos/akua-bae-logo.png" loading="lazy" alt="Akua Bae illustrated identity"></div>
-        </article>
-
-        <article id="story-packaging" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Packaging and editorial</p><h2>Product Packaging</h2><p class="lead">Packaging and print pieces that make complex information feel approachable while giving each organisation a strong, consistent presence.</p></div>
-          <div class="portfolio-gallery two-up"><img src="img/portfolio/custom/product-packaging/ripples-banga-spice.jpg" loading="lazy" alt="Ripples of Flavour Banga Spice Mix pouch"><img src="img/portfolio/custom/product-packaging/ains-bean-flour.jpg" loading="lazy" alt="AINS Bean Mixed Flour pouch"><img src="img/portfolio/custom/product-packaging/fertility-life-brochure-cover.jpg" loading="lazy" alt="The Fertility Life Initiative brochure cover"><img src="img/portfolio/custom/product-packaging/fertility-life-brochure-open.jpg" loading="lazy" alt="The Fertility Life Initiative open brochure"></div>
-        </article>
-
-        <article id="story-nxtdoor" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Brand guidelines</p><h2>Nxtdoor</h2><p class="lead">A bold, flexible identity system documented for reliable use across colour, scale and communication environments.</p></div>
-          <div class="portfolio-gallery two-up"><img src="img/portfolio/custom/brand-mockups/nxtdoor-guidelines.png" loading="lazy" alt="Nxtdoor brand guidelines cover"><img src="img/portfolio/custom/brand-mockups/nxtdoor-logo-environment.png" loading="lazy" alt="Nxtdoor logo shown across brand environments"></div>
-        </article>
-
-        <article id="story-fashion-brands" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Fashion and lifestyle branding</p><h2>Brand Mockups</h2><p class="lead">Identity systems translated into tactile, everyday touchpoints—from labels and shopping bags to apparel, stamps and branded environments.</p></div>
-          <div class="portfolio-gallery"><img src="img/portfolio/custom/brand-mockups/dreams-kulture-wall.jpg" loading="lazy" alt="Dreams Kulture wall identity"><img src="img/portfolio/custom/brand-mockups/dreams-kulture-tag.jpg" loading="lazy" alt="Dreams Kulture clothing tag"><img src="img/portfolio/custom/brand-mockups/dreams-kulture-bags.jpg" loading="lazy" alt="Dreams Kulture shopping bags"><img src="img/portfolio/custom/brand-mockups/erca-shopping-bag.jpg" loading="lazy" alt="ERCA by Eni shopping bag mockup"><img src="img/portfolio/custom/brand-mockups/hubertz-label.jpg" loading="lazy" alt="Hubertz clothing label mockup"><img src="img/portfolio/custom/brand-mockups/fusion-pulse-shirt.jpg" loading="lazy" alt="Fusion Pulse branded shirt"><img src="img/portfolio/custom/brand-mockups/fusion-pulse-stamp.jpg" loading="lazy" alt="Fusion Pulse brand stamp"><img src="img/portfolio/custom/brand-mockups/fusion-pulse-brand.jpg" loading="lazy" alt="Fusion Pulse brand identity presentation"></div>
-        </article>
-
-        <article id="story-brand-applications" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Identity in the real world</p><h2>Chiade, Kuepass &amp; Viicsoft</h2><p class="lead">Brand systems extended beyond the logo into practical, recognisable applications designed for everyday visibility.</p></div>
-          <div class="portfolio-gallery"><img src="img/portfolio/chiade-brand-guide.jpeg" loading="lazy" alt="Chiade fashion brand guide"><img src="img/portfolio/kuepass-brand-kit.jpeg" loading="lazy" alt="Kuepass brand kit"><img src="img/portfolio/kuepass-cap.jpeg" loading="lazy" alt="Kuepass branded cap"><img src="img/portfolio/viicsoft-bottle.jpeg" loading="lazy" alt="Viicsoft branded bottle"><img src="img/portfolio/viicsoft-shirts.jpeg" loading="lazy" alt="Viicsoft branded shirts"><img src="img/portfolio/viicsoft-notebooks.jpeg" loading="lazy" alt="Viicsoft branded notebooks"><img src="img/portfolio/viicsoft-tote.jpeg" loading="lazy" alt="Viicsoft branded tote bag"></div>
-        </article>
-
-        <article id="story-campaigns" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Worship and church design</p><h2>Worship &amp; Church Flyers</h2><p class="lead">A dedicated collection of church and worship graphics designed to turn themes, moments and live events into immediate, shareable stories.</p></div>
-          <div class="portfolio-gallery poster-wall"><img src="img/portfolio/custom/worship/church-worship-experience.jpg" loading="lazy" alt="Worship Experience event poster"><img src="img/portfolio/custom/worship/church-birthday.jpg" loading="lazy" alt="Living Seed Church birthday poster"><img src="img/portfolio/custom/worship/church-afro-gospel.jpg" loading="lazy" alt="Afro Gospel Sunday poster"><img src="img/portfolio/custom/worship/church-faith-for-living.jpg" loading="lazy" alt="Faith for Living campaign poster"><img src="img/portfolio/custom/worship/church-divine-increase.jpg" loading="lazy" alt="Divine Increase campaign poster"><img src="img/portfolio/custom/worship/church-thank-you.jpg" loading="lazy" alt="Celebration Service thank you poster"><img src="img/portfolio/custom/worship/church-altars.jpg" loading="lazy" alt="Altars event poster"><img src="img/portfolio/custom/worship/church-spiritual-alignment.jpg" loading="lazy" alt="Spiritual Alignment event poster"><img src="img/portfolio/custom/worship/church-thank-you-dunamis.jpg" loading="lazy" alt="Dunamis Sunday thank you poster"><img src="img/portfolio/custom/worship/church-prophetic-amplification.jpg" loading="lazy" alt="Prophetic Amplification event poster"><img src="img/portfolio/custom/worship/church-worship-wonders.jpg" loading="lazy" alt="Night of Worship and Wonders poster"><img src="img/portfolio/custom/worship/church-harmony-with-god.jpg" loading="lazy" alt="In Harmony with God midweek service poster"><img src="img/portfolio/custom/worship/church-celebration-service.jpg" loading="lazy" alt="Celebration Service poster"><img src="img/portfolio/custom/worship/church-obedience.jpg" loading="lazy" alt="Obedience campaign poster"><img src="img/portfolio/custom/worship/church-illuminate.jpg" loading="lazy" alt="Illuminate let love lead poster"><img src="img/portfolio/custom/worship/church-easter.jpg" loading="lazy" alt="He is Risen Easter poster"></div>
-        </article>
-
-        <article id="story-avatars" class="portfolio-story reveal">
-          <div class="portfolio-story-heading"><p class="eyebrow">Custom illustration</p><h2>Custom Avatars</h2><p class="lead">Expressive illustrated avatars and motion-ready reactions created to make digital conversations feel more human, playful and recognisable.</p></div>
-          <div class="portfolio-gallery avatar-wall"><img src="img/portfolio/custom/avatars/avatar-yeah.png" loading="lazy" alt="Custom avatar saying yeah"><img src="img/portfolio/custom/avatars/avatar-thanks.png" loading="lazy" alt="Custom avatar saying thanks"><img src="img/portfolio/custom/avatars/avatar-ok.png" loading="lazy" alt="Custom avatar making the okay gesture"><img src="img/portfolio/custom/avatars/avatar-laughing.gif" loading="lazy" alt="Animated laughing custom avatar"></div>
-        </article>
+      <div class="mxd-header__controls loading__fade">
+        <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" href="contact.html" aria-label="Start a project">
+          <span class="btn-caption">Start a project</span>
+          <i class="ph-bold ph-arrow-up-right"></i>
+        </a>
       </div>
-    </section>
+    </header>
+    <!-- Header End -->
 
-    <section class="section">
-      <div class="container cta reveal">
-        <p class="eyebrow">Make the next case study yours</p>
-        <h2>Move the metric that matters.</h2>
-        <p class="lead">Share the business outcome you need. We’ll work backwards to the right experience and technology.</p>
-        <a class="button button-primary button-lg" href="contact.html">Discuss a project <span class="arrow">↗</span></a>
+    <!-- Page Content Start -->
+    <main id="mxd-page-content" class="mxd-page-content inner-page-content works-template">
+
+      <!-- Section - Projects Masonry Start -->
+      <div class="mxd-section mxd-section-inner-headline grid-headline padding-default">
+        <div class="mxd-container grid-l-container">
+          <div class="mxd-block loading-wrap">
+            <div class="mxd-projects-masonry loading__item">
+              <div class="container-fluid p-0">
+                <div class="row g-0 mxd-projects-masonry__gallery" data-masonry='{"percentPosition": true }'>
+
+                  <div class="col-12 col-xl-6 mxd-projects-masonry__title headline-title">
+                    <div class="mxd-block__inner-headline">
+                      <h1 class="inner-headline__title headline-img-before headline-img-07">Projects<br>to explore</h1>
+                    </div>
+                    <p class="t-large works-template__intro">Product experiences, brand systems and strategic communications created for ambitious organisations and meaningful ideas.</p>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="case-study.html">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-2 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Marketplace</span>
+                        <span class="tag tag-default tag-permanent">Product Design</span>
+                        <span class="tag tag-default tag-permanent">Web</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo masonry-promo">
+                      <div class="mxd-project-item__name"><a href="case-study.html"><span>Chaise</span> talent marketplace</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#brand-identities">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-1 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Logos</span>
+                        <span class="tag tag-default tag-permanent">Identity</span>
+                        <span class="tag tag-default tag-permanent">Art Direction</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#brand-identities"><span>Logos</span> for distinctive brands</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#worship-design">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-8 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Worship</span>
+                        <span class="tag tag-default tag-permanent">Event Flyers</span>
+                        <span class="tag tag-default tag-permanent">Campaigns</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#worship-design"><span>Church flyers</span> and worship campaigns</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#product-packaging">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-7 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Packaging</span>
+                        <span class="tag tag-default tag-permanent">Print</span>
+                        <span class="tag tag-default tag-permanent">Food Brands</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#product-packaging"><span>Product packaging</span> designed for the shelf</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#brand-mockups">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-9 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Brand Mockups</span>
+                        <span class="tag tag-default tag-permanent">Fashion</span>
+                        <span class="tag tag-default tag-permanent">Applications</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#brand-mockups"><span>Brand systems</span> in real-world context</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#avatars">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-10 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Avatars</span>
+                        <span class="tag tag-default tag-permanent">Illustration</span>
+                        <span class="tag tag-default tag-permanent">Digital Expression</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#avatars"><span>Custom avatars</span> for playful digital moments</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#strategy-work">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-3 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Strategy</span>
+                        <span class="tag tag-default tag-permanent">Social Impact</span>
+                        <span class="tag tag-default tag-permanent">Communications</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#strategy-work"><span>Boys Champions</span> organisational strategy</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#product-design">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-11 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">UI/UX</span>
+                        <span class="tag tag-default tag-permanent">Web Design</span>
+                        <span class="tag tag-default tag-permanent">Mobile</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#product-design"><span>Product interfaces</span> for web and mobile</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#brand-applications">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-5 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Brand Systems</span>
+                        <span class="tag tag-default tag-permanent">Merchandise</span>
+                        <span class="tag tag-default tag-permanent">Identity</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#brand-applications"><span>Kuepass &amp; Viicsoft</span> identity applications</a></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item">
+                    <a class="mxd-project-item__media masonry-media" href="#brand-decks">
+                      <div class="mxd-project-item__preview masonry-preview preview-image-4 parallax-img-small"></div>
+                      <div class="mxd-project-item__tags">
+                        <span class="tag tag-default tag-permanent">Brand Guide</span>
+                        <span class="tag tag-default tag-permanent">Editorial</span>
+                        <span class="tag tag-default tag-permanent">Nonprofit</span>
+                      </div>
+                    </a>
+                    <div class="mxd-project-item__promo">
+                      <div class="mxd-project-item__name"><a href="#brand-decks"><span>Brand decks</span> and impact narratives</a></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="mxd-projects-masonry__btngroup anim-uni-in-up">
+                  <a class="btn-rotating btn-rotating-180 ver-02" href="contact.html" aria-label="Start a project">
+                    <svg version="1.1" id="scrollDown" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                      viewBox="0 0 160 160" class="btn-rotating__text animate-rotation" data-value="360">
+                      <defs>
+                        <path id="textPath" d="M149.7,80c0,38.5-31.2,69.7-69.7,69.7S10.3,118.5,10.3,80S41.5,10.3,80,10.3S149.7,41.5,149.7,80z"/>
+                      </defs>
+                      <g>
+                        <use href="#textPath" fill="none"></use>
+                        <text><textPath href="#textPath">Let's start new project * Let's start new project * </textPath></text>
+                      </g>
+                    </svg>
+                    <img class="btn-rotating__image" src="img/dream/logo.png" alt="Dream Digital">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-  <div data-footer></div>
-</body>
+      <!-- Section - Projects Masonry End -->
+
+      <!-- Section - Marquee Start -->
+      <div class="mxd-section padding-mtext">
+        <div class="mxd-container fullwidth-container">
+          <div class="mxd-block">
+            <div class="marquee marquee-right--gsap muted-extra">
+              <div class="marquee__toright">
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Strategy</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Identity</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Product</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Packaging</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Worship</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Avatars</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - Marquee End -->
+
+      <!-- Section - Collections Navigation Start -->
+      <div class="mxd-section padding-default">
+        <div class="mxd-container">
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0 justify-content-between">
+                <div class="col-12 col-xl-5 mxd-grid-item no-margin anim-uni-in-up">
+                  <p class="mxd-point-subtitle">
+                    <img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">
+                    Branding &amp; designs
+                  </p>
+                  <h2 class="mxd-section-title">Browse the custom collection.</h2>
+                </div>
+                <div class="col-12 col-xl-6 mxd-grid-item no-margin anim-uni-in-up">
+                  <p class="t-large">Explore each specialist design folder—from logo systems and packaging to worship graphics, custom avatars and campaign-ready mockups.</p>
+                  <nav class="works-template__nav" aria-label="Work collections">
+                    <a href="#brand-identities"><span>01</span>Logos</a>
+                    <a href="#worship-design"><span>02</span>Worship</a>
+                    <a href="#avatars"><span>03</span>Custom Avatars</a>
+                    <a href="#product-packaging"><span>04</span>Product Packaging</a>
+                    <a href="#brand-mockups"><span>05</span>Brand Mockups</a>
+                    <a href="#product-design"><span>06</span>Product Design</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - Collections Navigation End -->
+
+      <!-- Section - Portfolio Collections Start -->
+      <div class="mxd-section padding-grid-pre-mtext">
+        <div class="mxd-container">
+          <div class="mxd-block">
+            <div class="works-template__collections">
+
+              <article id="brand-identities" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Logos</p>
+                  <h2>Distinctive marks for brands with personality.</h2>
+                  <p class="t-large">Identity work for food, fashion, furniture, photography and lifestyle brands—made to be memorable, ownable and ready to grow.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/custom/logos/micos-pastries.jpg" alt="Micos Pastries and Cakes identity">
+                  <img src="img/portfolio/custom/logos/cado-gallery.jpg" alt="Cado Gallery jewellery identity">
+                  <img src="img/portfolio/custom/logos/bow-furniture.jpg" alt="BOW Furniture identity">
+                  <img src="img/portfolio/custom/logos/bartonbay-logo.jpg" alt="Bartonbay brand mark">
+                  <img src="img/portfolio/custom/logos/wrgo-imagery-logo.png" alt="Wrgo Imagery identity">
+                  <img src="img/portfolio/custom/logos/akua-bae-logo.png" alt="Akua Bae illustrated identity">
+                </div>
+              </article>
+
+              <article id="worship-design" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Worship</p>
+                  <h2>Church flyers built for attention and atmosphere.</h2>
+                  <p class="t-large">A dedicated collection of worship graphics designed to turn themes, moments and live events into immediate, shareable stories.</p>
+                </div>
+                <div class="works-template__image-grid works-template__image-grid--posters">
+                  <img src="img/portfolio/custom/worship/church-worship-experience.jpg" alt="Worship Experience event poster">
+                  <img src="img/portfolio/custom/worship/church-afro-gospel.jpg" alt="Afro Gospel Sunday poster">
+                  <img src="img/portfolio/custom/worship/church-faith-for-living.jpg" alt="Faith for Living poster">
+                  <img src="img/portfolio/custom/worship/church-divine-increase.jpg" alt="Divine Increase poster">
+                  <img src="img/portfolio/custom/worship/church-altars.jpg" alt="Altars event poster">
+                  <img src="img/portfolio/custom/worship/church-spiritual-alignment.jpg" alt="Spiritual Alignment event poster">
+                  <img src="img/portfolio/custom/worship/church-prophetic-amplification.jpg" alt="Prophetic Amplification poster">
+                  <img src="img/portfolio/custom/worship/church-worship-wonders.jpg" alt="Night of Worship and Wonders poster">
+                </div>
+              </article>
+
+              <article id="avatars" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Custom Avatars</p>
+                  <h2>Expressive character assets for digital conversations.</h2>
+                  <p class="t-large">Illustrated avatars and motion-ready reactions that make online communication feel more human, playful and recognisable.</p>
+                </div>
+                <div class="works-template__image-grid works-template__image-grid--avatars">
+                  <img src="img/portfolio/custom/avatars/avatar-yeah.png" alt="Custom avatar saying yeah">
+                  <img src="img/portfolio/custom/avatars/avatar-thanks.png" alt="Custom avatar saying thanks">
+                  <img src="img/portfolio/custom/avatars/avatar-ok.png" alt="Custom avatar making okay gesture">
+                  <img src="img/portfolio/custom/avatars/avatar-laughing.gif" alt="Animated laughing custom avatar">
+                </div>
+              </article>
+
+              <article id="product-packaging" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Product Packaging</p>
+                  <h2>Packaging and print systems that feel shelf-ready.</h2>
+                  <p class="t-large">Packaging and editorial pieces that make complex information approachable while giving each organisation a strong, consistent presence.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/custom/product-packaging/ripples-banga-spice.jpg" alt="Ripples of Flavour Banga Spice Mix pouch">
+                  <img src="img/portfolio/custom/product-packaging/ains-bean-flour.jpg" alt="AINS Bean Mixed Flour pouch">
+                  <img src="img/portfolio/custom/product-packaging/fertility-life-brochure-cover.jpg" alt="The Fertility Life Initiative brochure cover">
+                  <img src="img/portfolio/custom/product-packaging/fertility-life-brochure-open.jpg" alt="The Fertility Life Initiative open brochure">
+                </div>
+              </article>
+
+              <article id="brand-mockups" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Brand Mockups</p>
+                  <h2>Identity systems translated into real touchpoints.</h2>
+                  <p class="t-large">From labels and shopping bags to apparel, stamps and branded environments, the brand lives beyond the logo.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/custom/brand-mockups/nxtdoor-guidelines.png" alt="Nxtdoor brand guidelines cover">
+                  <img src="img/portfolio/custom/brand-mockups/dreams-kulture-bags.jpg" alt="Dreams Kulture shopping bags">
+                  <img src="img/portfolio/custom/brand-mockups/erca-shopping-bag.jpg" alt="ERCA by Eni shopping bag mockup">
+                  <img src="img/portfolio/custom/brand-mockups/hubertz-label.jpg" alt="Hubertz clothing label mockup">
+                  <img src="img/portfolio/custom/brand-mockups/fusion-pulse-shirt.jpg" alt="Fusion Pulse branded shirt">
+                  <img src="img/portfolio/custom/brand-mockups/fusion-pulse-stamp.jpg" alt="Fusion Pulse brand stamp">
+                </div>
+              </article>
+
+              <article id="product-design" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Product Design</p>
+                  <h2>Web and mobile interfaces with clearer journeys.</h2>
+                  <p class="t-large">Responsive product concepts shaped around confident visual systems and intuitive interaction across web and mobile.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/custom/product-design/reeves-africa-website.jpg" alt="Reeves for Africa responsive website">
+                  <img src="img/portfolio/custom/product-design/sushi-app-ui.jpg" alt="Sushi ordering mobile app interface">
+                  <img src="img/portfolio/custom/product-design/property-app-ui.jpg" alt="Property mobile app screens">
+                  <img src="img/portfolio/custom/product-design/shopping-app-ui.jpg" alt="Shopping app product screens">
+                  <img src="img/portfolio/custom/product-design/furniture-web-ui.jpg" alt="Furniture ecommerce webpage concept">
+                  <img src="img/portfolio/chaise-marketplace-screens.jpeg" alt="Chaise marketplace screens">
+                </div>
+              </article>
+
+              <article id="strategy-work" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Strategy</p>
+                  <h2>Social-impact strategy and storytelling.</h2>
+                  <p class="t-large">Strategic narratives spanning context, vision, mission, delivery priorities and five-year direction.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/boys-champions-strategy.jpeg" alt="Boys Champions organisational strategy cover">
+                  <img src="img/portfolio/boys-champions-executive-summary.jpeg" alt="Boys Champions executive summary">
+                  <img src="img/portfolio/boys-champions-problem-statement.jpeg" alt="Boys Champions problem statement">
+                  <img src="img/portfolio/boys-champions-vision-mission.jpeg" alt="Boys Champions vision and mission">
+                </div>
+              </article>
+
+              <article id="brand-decks" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Brand Decks</p>
+                  <h2>Editorial systems for pitch, impact and growth.</h2>
+                  <p class="t-large">Brand and impact decks that help organisations communicate purpose, audience and promise with confidence.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/ambassadors-brand-deck.jpeg" alt="The Ambassadors DOTA brand and impact deck">
+                  <img src="img/portfolio/ambassadors-audience-deck.jpeg" alt="The Ambassadors DOTA audience strategy deck">
+                  <img src="img/portfolio/chiade-brand-guide.jpeg" alt="Chiade fashion brand guide">
+                  <img src="img/portfolio/kuepass-brand-kit.jpeg" alt="Kuepass brand kit">
+                </div>
+              </article>
+
+              <article id="brand-applications" class="works-template__collection anim-uni-in-up">
+                <div class="works-template__collection-copy">
+                  <p class="mxd-point-subtitle"><img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">Applications</p>
+                  <h2>Identity systems applied to practical brand assets.</h2>
+                  <p class="t-large">Brand visuals extended into merchandise, notebooks, packaging-style moments and everyday visibility.</p>
+                </div>
+                <div class="works-template__image-grid">
+                  <img src="img/portfolio/kuepass-cap.jpeg" alt="Kuepass branded cap">
+                  <img src="img/portfolio/viicsoft-bottle.jpeg" alt="Viicsoft branded bottle">
+                  <img src="img/portfolio/viicsoft-shirts.jpeg" alt="Viicsoft branded shirts">
+                  <img src="img/portfolio/viicsoft-notebooks.jpeg" alt="Viicsoft branded notebooks">
+                  <img src="img/portfolio/viicsoft-tote.jpeg" alt="Viicsoft branded tote bag">
+                  <img src="img/portfolio/custom/brand-mockups/fusion-pulse-brand.jpg" alt="Fusion Pulse brand identity presentation">
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - Portfolio Collections End -->
+
+      <!-- Section - CTA Start -->
+      <div class="mxd-section overflow-hidden">
+        <div class="mxd-container">
+          <div class="mxd-block">
+            <div class="mxd-promo">
+              <div class="mxd-promo__inner anim-zoom-out-container">
+                <div class="mxd-promo__bg"></div>
+                <div class="mxd-promo__content">
+                  <p class="mxd-promo__title anim-uni-in-up">
+                    <span class="mxd-promo__icon"><img src="img/dream/logo.png" alt="Dream Digital"></span>
+                    <span class="mxd-promo__caption reveal-type">Make the next case study yours.</span>
+                  </p>
+                  <div class="mxd-promo__controls anim-uni-in-up">
+                    <a class="btn btn-anim btn-default btn-large btn-additional slide-right-up" href="contact.html">
+                      <span class="btn-caption">Discuss a project</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mxd-promo__images">
+                  <img class="promo-image promo-image-1" src="img/portfolio/chaise-product-flow.jpeg" alt="Chaise product experience">
+                  <img class="promo-image promo-image-2" src="img/portfolio/ambassadors-brand-deck.jpeg" alt="Ambassadors brand strategy work">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section - CTA End -->
+
+    </main>
+    <!-- Page Content End -->
+
+    <!-- Footer Start -->
+    <footer id="mxd-footer" class="mxd-footer">
+      <div class="mxd-footer__text-wrap">
+        <div class="fullwidth-text__tl-trigger"></div>
+        <div class="mxd-footer__fullwidth-text anim-top-to-bottom">
+          <svg class="mxd-footer__svg-v2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.26 72" aria-hidden="true">
+            <path d="M4.93,56V25.93H0V16h10.13v7.73h2.8c1.11-2.67,2.82-4.69,5.13-6.07c2.31-1.38,4.96-2.07,7.93-2.07h3.33v8.53h-3.8c-3.65,0-6.36,1.04-8.13,3.13c-1.78,2.09-2.67,4.87-2.67,8.33V56H4.93z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="mxd-footer__footer-blocks">
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card fullheight-card">
+            <div class="footer-blocks__nav">
+              <ul class="footer-nav">
+                <li class="footer-nav__item anim-uni-in-up"><a href="index.html" class="footer-nav__link btn-anim"><span class="btn-caption">Home</span></a></li>
+                <li class="footer-nav__item anim-uni-in-up"><a href="about.html" class="footer-nav__link btn-anim"><span class="btn-caption">About us</span></a></li>
+                <li class="footer-nav__item anim-uni-in-up"><a href="services.html" class="footer-nav__link btn-anim"><span class="btn-caption">Services</span></a></li>
+                <li class="footer-nav__item anim-uni-in-up"><a href="work.html" class="footer-nav__link btn-anim"><span class="btn-caption">Works</span></a></li>
+                <li class="footer-nav__item anim-uni-in-up"><a href="insights.html" class="footer-nav__link btn-anim"><span class="btn-caption">Insights</span></a></li>
+                <li class="footer-nav__item anim-uni-in-up"><a href="contact.html" class="footer-nav__link btn-anim"><span class="btn-caption">Contact</span></a></li>
+              </ul>
+            </div>
+            <div class="footer-blocks__links anim-uni-in-up">
+              <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="pricing.html">
+                <span class="btn-caption">Pricing</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+              <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="faq.html">
+                <span class="btn-caption">FAQs</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">
+              <a href="mailto:dreamdigitalafrica@gmail.com?subject=Dream%20Digital%20enquiry">dreamdigitalafrica@gmail.com</a>
+            </p>
+          </div>
+          <div class="footer-blocks__card">
+            <p class="mxd-point-subtitle anim-uni-in-up">
+              <img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">
+              <a href="tel:+2347037078046">+234 703 707 8046</a>
+            </p>
+          </div>
+          <div class="footer-blocks__card fill-card notify">
+            <div class="footer-blocks__title anim-uni-in-up">
+              <p class="footer-blocks__title-m">Subscribe to our insights:</p>
+            </div>
+            <div class="form-container anim-uni-in-up">
+              <div class="form__reply subscription-ok"><span class="reply__text">Done! Thanks for subscribing.</span></div>
+              <div class="form__reply subscription-error"><span class="reply__text">Ooops! Something went wrong. Please try again later.</span></div>
+              <form class="form notify-form form-light">
+                <input type="email" placeholder="Your Email" required>
+                <button class="btn btn-form btn-absolute-right btn-muted slide-right-up anim-no-delay" type="submit" aria-label="Submit">
+                  <i class="ph ph-arrow-up-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-blocks__column animate-card-3">
+          <div class="footer-blocks__card fullheight-card">
+            <div class="footer-blocks__block">
+              <div class="footer-blocks__title anim-uni-in-up">
+                <p class="footer-blocks__title-l">Capabilities</p>
+              </div>
+              <div class="footer-blocks__socials">
+                <ul class="footer-socials">
+                  <li class="footer-socials__item anim-uni-in-up"><a href="services.html" class="footer-socials__link">Strategy</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="services.html" class="footer-socials__link">Branding</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="services.html" class="footer-socials__link">Product</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="services.html" class="footer-socials__link">Software</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="services.html" class="footer-socials__link">AI Solutions</a></li>
+                  <li class="footer-socials__item anim-uni-in-up"><a href="contact.html" class="footer-socials__link">Consultancy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-blocks__links anim-uni-in-up">
+              <p class="t-xsmall t-muted">
+                <a class="no-effect" href="index.html">Dream Digital</a>
+                <i class="ph-bold ph-copyright"></i>
+                2026
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- To Top Button Start -->
+    <a href="#0" id="to-top" class="btn btn-to-top slide-up anim-no-delay">
+      <i class="ph ph-arrow-up"></i>
+    </a>
+    <!-- To Top Button End -->
+
+    <!-- Load Scripts Start -->
+    <script src="js/rayo-libs.min.js"></script>
+    <script src="js/rayo-app.js"></script>
+    <!-- Load Scripts End -->
+
+  </body>
+
 </html>

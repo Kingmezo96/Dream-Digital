@@ -63,12 +63,21 @@ body {
   background-size: cover;
 }
 
-.preview-image-1 { background-image: url("../img/portfolio/ambassadors-brand-deck.jpeg"); }
+.headline-img-07::before {
+  background-image: url("../img/portfolio/custom/product-design/reeves-africa-website.jpg");
+}
+
+.preview-image-1 { background-image: url("../img/portfolio/custom/logos/micos-pastries.jpg"); }
 .preview-image-2 { background-image: url("../img/portfolio/chaise-hero-phone.jpeg"); }
 .preview-image-3 { background-image: url("../img/portfolio/boys-champions-strategy-cover.jpeg"); }
-.preview-image-4 { background-image: url("../img/portfolio/chiade-brand-guide.jpeg"); }
+.preview-image-4 { background-image: url("../img/portfolio/ambassadors-brand-deck.jpeg"); }
 .preview-image-5 { background-image: url("../img/portfolio/kuepass-brand-kit.jpeg"); }
 .preview-image-6 { background-image: url("../img/portfolio/viicsoft-shirts.jpeg"); }
+.preview-image-7 { background-image: url("../img/portfolio/custom/product-packaging/ripples-banga-spice.jpg"); }
+.preview-image-8 { background-image: url("../img/portfolio/custom/worship/church-afro-gospel.jpg"); }
+.preview-image-9 { background-image: url("../img/portfolio/custom/brand-mockups/nxtdoor-guidelines.png"); }
+.preview-image-10 { background-image: url("../img/portfolio/custom/avatars/avatar-ok.png"); }
+.preview-image-11 { background-image: url("../img/portfolio/custom/product-design/reeves-africa-website.jpg"); }
 
 .blog-preview-image-1 {
   background-image: linear-gradient(180deg, transparent, rgba(5, 10, 18, .16)), url("../img/portfolio/chaise-product-flow.jpeg");
@@ -86,6 +95,8 @@ body {
 .mxd-pinned__img-mobile img,
 .marquee__item img,
 .mxd-hero-05__worksblock > img,
+.works-template .works-template__image-grid img,
+.works-template .mxd-promo__images img,
 .insights-template .post-featured__thumb img,
 .insights-template .post-simple__thumb img,
 .insights-template .recent-post__thumb img,
@@ -145,6 +156,117 @@ body {
   object-fit: contain;
   background: #fff;
   padding: 1rem;
+}
+
+.works-template__intro {
+  max-width: 62rem;
+  margin-top: 2.4rem;
+  color: var(--t-muted);
+}
+
+.works-template__nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.works-template__nav a {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.6rem 2rem;
+  border: 1px solid var(--stroke-elements);
+  border-radius: var(--_radius-m);
+  color: var(--t-bright);
+  text-decoration: none;
+  transition: color .3s ease, background-color .3s ease, border-color .3s ease, transform .3s ease;
+}
+
+.works-template__nav a:hover {
+  color: var(--base);
+  background-color: var(--base-opp);
+  border-color: var(--base-opp);
+  transform: translateY(-0.2rem);
+}
+
+.works-template__nav span {
+  flex: 0 0 auto;
+  color: var(--t-muted);
+  font-size: 1.2rem;
+  letter-spacing: .04em;
+}
+
+.works-template__collections {
+  display: grid;
+  gap: 7rem;
+}
+
+.works-template__collection {
+  display: grid;
+  gap: 3rem;
+  padding-top: 6rem;
+  border-top: 1px solid var(--stroke-elements);
+}
+
+.works-template__collection-copy {
+  max-width: 86rem;
+}
+
+.works-template__collection-copy p {
+  margin-top: 1.8rem;
+  color: var(--t-muted);
+}
+
+.works-template__image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.works-template__image-grid img {
+  width: 100%;
+  height: 32rem;
+  border-radius: var(--_radius-m);
+  background-color: var(--base-tint);
+}
+
+.works-template__image-grid--posters img {
+  height: 48rem;
+  object-position: top center;
+}
+
+.works-template__image-grid--avatars img {
+  object-fit: contain;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .works-template__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .works-template__image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .works-template__nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .works-template__image-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .works-template__image-grid img {
+    height: 38rem;
+  }
+
+  .works-template__image-grid--posters img {
+    height: 54rem;
+  }
 }
 
 .mxd-footer__svg-v2 {
