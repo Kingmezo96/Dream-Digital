@@ -1,76 +1,395 @@
-<!doctype html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pricing — Dream Digital</title>
-  <meta name="description" content="Flexible Dream Digital engagement options for strategy, brand, product and technology projects.">
-  <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
-  <link rel="icon" href="img/favicon/favicon-32.png" type="image/png">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="img/favicon/manifest.webmanifest">
-  <link rel="stylesheet" href="css/dream-rayo.css">
-  <link rel="stylesheet" href="css/dream-inner.css">
-  <script defer src="js/main.js"></script>
-</head>
-<body class="rayo-inner-page pricing-page">
-  <div data-header></div>
-  <main id="main">
-    <section class="pricing-hero">
-      <div class="container reveal">
-        <p class="eyebrow">Flexible engagement models</p>
-        <h1>Invest in the<br><span class="gradient-text">right next move.</span></h1>
-        <p class="lead">Every engagement is shaped around the outcome, complexity and pace your organisation needs. Start focused, then scale with confidence.</p>
-      </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-    <section class="section-sm">
-      <div class="container pricing-options">
-        <article class="pricing-option glass-card reveal">
-          <span class="pricing-index">01</span>
-          <div>
-            <p class="eyebrow">Focused</p>
-            <h2>Discovery Sprint</h2>
-            <p>For teams that need clarity before committing to a larger programme.</p>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Pricing — Dream Digital</title>
+    <meta name="description" content="Dream Digital pricing for custom websites, social media, brand strategy, branding, product platforms, integrations and custom market-fit offers.">
+    <meta name="keywords" content="Dream Digital pricing, website design pricing, social media package, brand strategy package, branding package, digital agency pricing">
+    <meta name="author" content="Dream Digital">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:title" content="Pricing — Dream Digital">
+    <meta property="og:description" content="Flexible digital agency offers starting from $299.">
+    <meta property="og:url" content="https://dream-digital-africa.vercel.app/pricing.html">
+    <meta property="og:image" content="https://dream-digital-africa.vercel.app/img/portfolio/chaise-marketplace-screens.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dream-rayo.css">
+
+    <script>
+      localStorage.setItem('template.theme', 'light');
+      const theme = localStorage.getItem('template.theme');
+      const themeAttr = document.createAttribute('data-theme');
+      themeAttr.value = 'light';
+      document.documentElement.setAttributeNode(themeAttr);
+    </script>
+  </head>
+
+  <body class="pricing-template">
+
+    <div id="loader" class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__content">
+          <div class="loader__count">
+            <span class="count__text">0</span>
+            <span class="count__percent">%</span>
           </div>
-          <ul><li>Stakeholder workshop</li><li>Opportunity and risk audit</li><li>Prioritised roadmap</li><li>Actionable recommendations</li></ul>
-          <div class="pricing-footer"><strong>Scoped to your challenge</strong><a class="button button-primary" href="contact.html">Request a quote <span class="arrow">↗</span></a></div>
-        </article>
-
-        <article class="pricing-option glass-card featured reveal">
-          <span class="pricing-badge">Most flexible</span>
-          <span class="pricing-index">02</span>
-          <div>
-            <p class="eyebrow">Ongoing</p>
-            <h2>Growth Partnership</h2>
-            <p>For organisations that need senior strategy, design and technology capability month after month.</p>
-          </div>
-          <ul><li>Dedicated multidisciplinary team</li><li>Monthly planning and delivery</li><li>Design, content and optimisation</li><li>Performance reporting</li></ul>
-          <div class="pricing-footer"><strong>Monthly engagement</strong><a class="button button-primary" href="contact.html">Build your plan <span class="arrow">↗</span></a></div>
-        </article>
-
-        <article class="pricing-option glass-card reveal">
-          <span class="pricing-index">03</span>
-          <div>
-            <p class="eyebrow">End-to-end</p>
-            <h2>Product &amp; Brand Build</h2>
-            <p>For ambitious launches, rebrands and digital platforms that need one accountable partner.</p>
-          </div>
-          <ul><li>Strategy and positioning</li><li>Brand or product experience</li><li>Development and launch</li><li>Post-launch support</li></ul>
-          <div class="pricing-footer"><strong>Milestone-based project</strong><a class="button button-primary" href="contact.html">Discuss your project <span class="arrow">↗</span></a></div>
-        </article>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section pricing-note">
-      <div class="container reveal">
-        <p class="eyebrow">Straightforward by design</p>
-        <h2>Clear scope. Clear milestones. No surprises.</h2>
-        <p class="lead">After a short consultation, you receive a tailored proposal covering deliverables, timing, responsibilities and investment.</p>
-        <a class="button button-primary button-lg" href="contact.html">Start a conversation <span class="arrow">↗</span></a>
+    <nav id="mxd-nav" class="mxd-nav__wrap" data-lenis-prevent>
+      <div class="mxd-nav__contain loading__fade">
+        <a href="#0" class="mxd-nav__hamburger" aria-label="Menu">
+          <div class="hamburger__base"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </a>
       </div>
-    </section>
-  </main>
-  <div data-footer></div>
-</body>
+      <div class="mxd-menu__wrapper">
+        <div class="mxd-menu__contain">
+          <div class="mxd-menu__left">
+            <div class="main-menu">
+              <nav class="main-menu__content">
+                <ul class="main-menu__simple">
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="index.html"><span class="btn-caption">Home</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="about.html"><span class="btn-caption">About Us</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="services.html"><span class="btn-caption">Services</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="work.html"><span class="btn-caption">Works</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="insights.html"><span class="btn-caption">Insights</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="contact.html"><span class="btn-caption">Contact Us</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link btn-anim" href="pricing.html"><span class="btn-caption">Pricing</span></a></li>
+                </ul>
+                <ul id="main-menu" class="main-menu__accordion">
+                  <li class="main-menu__item"></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="mxd-menu__right">
+            <div class="menu-promo">
+              <div class="menu-promo__content">
+                <p class="menu-promo__caption menu-fade-in">Hello from Dream Digital.<br>Choose a focused package, then scale into the full digital engine.</p>
+              </div>
+            </div>
+          </div>
+          <button id="nav-close" class="mxd-menu__close close-button" aria-label="Close menu">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header" class="mxd-header">
+      <div class="mxd-header__logo loading__fade">
+        <a href="index.html" class="mxd-logo" aria-label="Dream Digital home">
+          <span class="mxd-logo__text">Dream<br>Digital</span>
+        </a>
+      </div>
+      <div class="mxd-header__controls">
+        <button id="color-switcher" class="mxd-color-switcher loading__fade" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up loading__fade" href="contact.html">
+          <span class="btn-caption">Start a project</span>
+          <i class="ph-bold ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </header>
+
+    <main id="mxd-page-content" class="mxd-page-content inner-page-content">
+
+      <div class="mxd-section mxd-section-inner-headline padding-headline-pre-grid">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block loading-wrap">
+            <div class="container-fluid px-0">
+              <div class="row gx-0">
+                <div class="col-12 col-xl-10 mxd-grid-item no-margin">
+                  <div class="mxd-inner-headline">
+                    <p class="mxd-inner-headline__subtitle loading__item">
+                      <span>Pricing</span>
+                    </p>
+                    <h1 class="mxd-inner-headline__title headline-img-before headline-img-07 loading__item">Start smart.<br>Scale beautifully.</h1>
+                    <p class="inner-headline__text t-large t-bright loading__item pricing-template__intro">Choose a focused starter or custom build. Every package is scoped around your audience, deliverables and launch timeline before work begins.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-grid">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0 justify-content-between">
+                <div class="col-12 col-xl-5 mxd-grid-item anim-uni-in-up">
+                  <p class="mxd-point-subtitle">
+                    <img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">
+                    Flexible packages
+                  </p>
+                  <h2 class="mxd-section-title">Choose the offer that fits your next move.</h2>
+                </div>
+                <div class="col-12 col-xl-6 mxd-grid-item anim-uni-in-up">
+                  <p class="t-large">These starting points help you move quickly without overbuying. After a short conversation, we confirm the exact deliverables, timeline and investment before work begins.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mxd-block">
+            <div class="mxd-pricing-table loading__fade">
+              <div class="container-fluid p-0">
+                <div class="row g-0 pricing-template__cards">
+                  <div class="col-12 col-lg-6 col-xxl-4 mxd-pricing-table__item">
+                    <div class="mxd-pricing-table__inner">
+                      <div class="mxd-pricing-table__data pricing-data">
+                        <div class="pricing-data__header">
+                          <p class="pricing-header__title">Branding &amp; Website</p>
+                          <p class="pricing-header__descr">A focused starter for brands that need a credible identity and a clean online presence.</p>
+                        </div>
+                        <div class="pricing-data__price">
+                          <p class="pricing-template__from">Starting at</p>
+                          <div class="pricing-data__num">
+                            <span class="pricing-data__currency">$</span>
+                            <span class="pricing-data__amount">99</span>
+                            <span class="pricing-data__period">USD</span>
+                          </div>
+                        </div>
+                        <div class="pricing-data__divider"></div>
+                        <div class="pricing-data__features">
+                          <ul class="mxd-check-list">
+                            <li><i class="ph-bold ph-check"></i><span>Logo refresh or visual direction starter</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Landing page or starter website structure</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Mobile-first page styling and layout</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Basic brand messaging and calls-to-action</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Launch-ready guidance and handover</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mxd-pricing-table__btn">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-up" href="contact.html">
+                          <span class="btn-caption">Start my brand</span>
+                          <i class="ph-bold ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 col-xxl-4 mxd-pricing-table__item">
+                    <div class="mxd-pricing-table__inner best-choice">
+                      <div class="mxd-pricing-table__tag">
+                        <span class="tag tag-default tag-permanent">Popular</span>
+                      </div>
+                      <div class="mxd-pricing-table__data pricing-data">
+                        <div class="pricing-data__header">
+                          <p class="pricing-header__title">Content Creation &amp; Product Design</p>
+                          <p class="pricing-header__descr">Creative assets and product direction for brands that need stronger content and digital experiences.</p>
+                        </div>
+                        <div class="pricing-data__price">
+                          <p class="pricing-template__from">Starting at</p>
+                          <div class="pricing-data__num">
+                            <span class="pricing-data__currency">$</span>
+                            <span class="pricing-data__amount">199</span>
+                            <span class="pricing-data__period">USD</span>
+                          </div>
+                        </div>
+                        <div class="pricing-data__divider"></div>
+                        <div class="pricing-data__features">
+                          <ul class="mxd-check-list">
+                            <li><i class="ph-bold ph-check"></i><span>Content direction and campaign concept</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Social media graphics or short-form assets</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Product screens, wireframes or UI concepts</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Customer journey and experience recommendations</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Editable creative handover where possible</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mxd-pricing-table__btn">
+                        <a class="btn btn-anim btn-default btn-additional slide-right-up" href="contact.html">
+                          <span class="btn-caption">Plan my content</span>
+                          <i class="ph-bold ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-12 col-xxl-4 mxd-pricing-table__item">
+                    <div class="mxd-pricing-table__inner">
+                      <div class="mxd-pricing-table__data pricing-data">
+                        <div class="pricing-data__header">
+                          <p class="pricing-header__title">Custom</p>
+                          <p class="pricing-header__descr">A tailored mix of branding, content, website, product, automation or campaign support.</p>
+                        </div>
+                        <div class="pricing-data__price">
+                          <p class="pricing-template__from">Tailored to scope</p>
+                          <div class="pricing-data__num pricing-data__num--custom">
+                            <span class="pricing-data__amount pricing-data__amount--custom">Custom</span>
+                          </div>
+                        </div>
+                        <div class="pricing-data__divider"></div>
+                        <div class="pricing-data__features">
+                          <ul class="mxd-check-list">
+                            <li><i class="ph-bold ph-check"></i><span>Choose only the services your business needs</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Market-fit offer, messaging and positioning</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Website, integrations, AI or automation support</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Flexible milestones and delivery pace</span></li>
+                            <li><i class="ph-bold ph-check"></i><span>Ongoing optimisation options</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mxd-pricing-table__btn">
+                        <a class="btn btn-anim btn-default btn-outline slide-right-up" href="contact.html">
+                          <span class="btn-caption">Create my offer</span>
+                          <i class="ph-bold ph-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-mtext">
+        <div class="mxd-container fullwidth-container">
+          <div class="mxd-block">
+            <div class="marquee marquee-right--gsap muted-extra">
+              <div class="marquee__toright">
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Starting from $99</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Websites</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Product Design</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Content Creation</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Custom Systems</p></div>
+                <div class="marquee__item one-line item-regular text"><p class="marquee__text">Market Fit</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section padding-grid">
+        <div class="mxd-container grid-container">
+          <div class="mxd-block">
+            <div class="container-fluid px-0">
+              <div class="row gx-0 justify-content-between">
+                <div class="col-12 col-xl-5 mxd-grid-item no-margin anim-uni-in-up">
+                  <p class="mxd-point-subtitle">
+                    <img class="inject-me" src="img/icons/20x20-rayo-star.svg" alt="">
+                    How we scope
+                  </p>
+                  <h2 class="mxd-section-title">Simple process. No messy surprises.</h2>
+                </div>
+                <div class="col-12 col-xl-6 mxd-grid-item no-margin">
+                  <div class="pricing-template__process-grid">
+                    <article class="pricing-template__process-card anim-uni-in-up">
+                      <span>01</span>
+                      <h3>Choose the direction</h3>
+                      <p class="t-small">We identify the package closest to your immediate goal and the market you want to reach.</p>
+                    </article>
+                    <article class="pricing-template__process-card anim-uni-in-up">
+                      <span>02</span>
+                      <h3>Shape the scope</h3>
+                      <p class="t-small">We define the pages, content, creative assets, integrations and timeline before design starts.</p>
+                    </article>
+                    <article class="pricing-template__process-card anim-uni-in-up">
+                      <span>03</span>
+                      <h3>Launch and optimise</h3>
+                      <p class="t-small">We build, refine and hand over the project with clear next steps for growth.</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mxd-section overflow-hidden">
+        <div class="mxd-container">
+          <div class="mxd-block">
+            <div class="mxd-promo">
+              <div class="mxd-promo__inner anim-zoom-out-container">
+                <div class="mxd-promo__bg"></div>
+                <div class="mxd-promo__content">
+                  <p class="mxd-promo__title anim-uni-in-up">
+                    <span class="mxd-promo__icon"><img src="img/favicon/dream-icon-white.png" alt="Dream Digital icon"></span>
+                    <span class="mxd-promo__caption reveal-type">Not sure which package fits?</span>
+                  </p>
+                  <div class="mxd-promo__controls anim-uni-in-up">
+                    <a class="btn btn-anim btn-default btn-large btn-additional slide-right-up" href="contact.html">
+                      <span class="btn-caption">Let’s shape it together</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="mxd-promo__images">
+                  <img class="promo-image promo-image-1" src="img/portfolio/chaise-marketplace-screens.jpeg" alt="Dream Digital web and mobile product work">
+                  <img class="promo-image promo-image-2" src="img/portfolio/custom/brand-mockups/nxtdoor-guidelines.png" alt="Dream Digital brand strategy work">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="mxd-footer" class="mxd-footer">
+      <div class="mxd-footer__text-wrap">
+        <div class="fullwidth-text__tl-trigger"></div>
+        <div class="mxd-footer__fullwidth-text anim-top-to-bottom"></div>
+      </div>
+
+      <div class="mxd-footer__footer-blocks">
+        <div class="footer-blocks__tl-trigger"></div>
+        <div class="container-fluid px-0">
+          <div class="row gx-0">
+            <div class="col-12 col-xl-4 mxd-footer__footer-block footer-block-1 anim-uni-in-up">
+              <p class="footer-block__title">Dream Digital</p>
+              <p class="footer-block__text">Strategy, branding, product design, software, AI and digital growth systems for ambitious organisations.</p>
+            </div>
+            <div class="col-12 col-xl-4 mxd-footer__footer-block footer-block-2 anim-uni-in-up">
+              <p class="footer-block__title">Contact</p>
+              <p class="footer-block__text"><a class="no-effect" href="mailto:dreamdigitalafrica@gmail.com">dreamdigitalafrica@gmail.com</a></p>
+              <p class="footer-block__text"><a class="no-effect" href="tel:+2347037078046">+234 703 707 8046</a></p>
+            </div>
+            <div class="col-12 col-xl-4 mxd-footer__footer-block footer-block-3 anim-uni-in-up">
+              <p class="footer-block__title">Explore</p>
+              <ul class="footer-block__nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#0" id="to-top" class="btn btn-to-top slide-up">
+      <i class="ph ph-arrow-up"></i>
+    </a>
+
+    <script src="js/rayo-libs.min.js"></script>
+    <script src="js/rayo-app.js"></script>
+  </body>
+
 </html>
