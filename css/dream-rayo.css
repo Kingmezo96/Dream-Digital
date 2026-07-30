@@ -494,6 +494,59 @@ body {
   overflow-y: auto;
 }
 
+/* Unified Dream Digital menu overlay
+   Keeps the original Rayo animation, but matches the dark navigation style
+   used across the rest of the site. */
+.mxd-menu__wrapper {
+  padding: 0 !important;
+}
+
+.mxd-nav__hamburger.nav-open .hamburger__base,
+.mxd-menu__contain > .hamburger__base {
+  background-color: #161616 !important;
+  border-radius: 0 !important;
+}
+
+.mxd-nav__hamburger.nav-open .hamburger__line {
+  background-color: #ffffff !important;
+}
+
+.mxd-menu__caption {
+  display: none !important;
+}
+
+.mxd-menu__right,
+.mxd-menu__data {
+  display: none !important;
+}
+
+.mxd-menu__left {
+  width: 100% !important;
+}
+
+.main-menu__simple {
+  gap: .35rem;
+}
+
+.main-menu__simple .main-menu__link,
+.main-menu__simple .main-menu__link .btn-caption,
+.main-menu__simple .main-menu__link .btn-caption span {
+  color: #ffffff !important;
+}
+
+.main-menu__simple .main-menu__link {
+  text-decoration: none;
+}
+
+.mxd-menu__data p,
+.mxd-menu__data p a {
+  color: rgba(255, 255, 255, .72) !important;
+}
+
+.mxd-menu__data p a {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .42), rgba(255, 255, 255, .42)), linear-gradient(to right, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)) !important;
+}
+
 @media (max-height: 600px) {
   .mxd-menu__caption {
     margin-bottom: 1.2rem;

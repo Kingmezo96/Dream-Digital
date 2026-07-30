@@ -195,21 +195,23 @@ html[data-theme="dark"] .template-site-header {
   gap: .55rem;
   margin-left: 0;
   padding: clamp(7rem, 12vw, 10rem) clamp(1.25rem, 8vw, 8rem) clamp(2rem, 5vw, 4rem);
-  background: rgba(255, 255, 255, .97);
+  background: rgba(22, 22, 22, .98);
   transform: translateY(-105%);
   transition: transform .45s cubic-bezier(.22, 1, .36, 1);
 }
-html[data-theme="dark"] .template-menu-panel { background: rgba(5, 7, 11, .96); }
+html[data-theme="dark"] .template-menu-panel,
+html[data-theme="light"] .template-menu-panel { background: rgba(22, 22, 22, .98); }
 .template-menu-panel.open { transform: translateY(0); }
 .template-menu-caption {
-  color: var(--muted);
+  display: none;
+  color: rgba(255, 255, 255, .58);
   text-transform: uppercase;
   letter-spacing: .12em;
   font-size: .72rem;
   margin-bottom: 1rem;
 }
 .template-menu-panel > a:not(.button) {
-  color: var(--text);
+  color: #fff;
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 850;
   line-height: .9;
@@ -218,11 +220,12 @@ html[data-theme="dark"] .template-menu-panel { background: rgba(5, 7, 11, .96); 
 }
 .template-menu-panel > a:not(.button):hover,
 .template-menu-panel > a.active {
-  color: var(--blue);
+  color: #fff;
+  opacity: .72;
   transform: translateX(.35rem);
 }
 html[data-theme="dark"] .template-menu-panel > a:not(.button):hover,
-html[data-theme="dark"] .template-menu-panel > a.active { color: var(--blue-light); }
+html[data-theme="dark"] .template-menu-panel > a.active { color: #fff; }
 
 .hero { min-height: 100svh; display: grid; align-items: end; padding: 8.5rem 0 4rem; position: relative; overflow: clip; }
 .hero::after { content: ""; position: absolute; inset: auto 0 0; height: 28%; background: linear-gradient(transparent, var(--ink)); pointer-events: none; }
@@ -662,11 +665,12 @@ body.rayo-inner-page .digest-hero::after {
     justify-content: center;
     gap: .55rem;
     padding: 7rem 1.25rem 2.5rem;
-    background: rgba(255, 255, 255, .97);
+    background: rgba(22, 22, 22, .98);
     transform: translateY(-105%);
     transition: transform .45s cubic-bezier(.22, 1, .36, 1);
   }
-  html[data-theme="dark"] .template-menu-panel { background: rgba(5, 7, 11, .96); }
+  html[data-theme="dark"] .template-menu-panel,
+  html[data-theme="light"] .template-menu-panel { background: rgba(22, 22, 22, .98); }
   .template-menu-panel.open { transform: translateY(0); }
   .template-menu-panel > a:not(.button) {
     padding: .15rem 0;

@@ -66,11 +66,13 @@ gsap.registerPlugin(Flip);
 const content = document.querySelector('body');
 const imgLoad = imagesLoaded(content);
 const loadingWrap = document.querySelector('.loading-wrap');
-const loadingItems = loadingWrap.querySelectorAll('.loading__item');
+const loadingItems = loadingWrap ? loadingWrap.querySelectorAll('.loading__item') : [];
 const fadeInItems = document.querySelectorAll('.loading__fade');
+let loaderHasCompleted = false;
 
 function startLoader() {
   let counterElement = document.querySelector(".loader__count .count__text");
+  if (!counterElement) return;
   let currentValue = 0;
   function updateCounter() {
     if (currentValue < 100) {
@@ -85,16 +87,24 @@ function startLoader() {
 }
 startLoader();
 
-imgLoad.on('always', instance => {
+function completeLoaderOnce() {
+  if (loaderHasCompleted) return;
+  loaderHasCompleted = true;
   hideLoader();
   pageAppearance();
-});
+}
+
+imgLoad.on('always', completeLoaderOnce);
+window.addEventListener('load', () => setTimeout(completeLoaderOnce, 800));
+setTimeout(completeLoaderOnce, 3500);
 
 function hideLoader() {
+  const loader = document.getElementById("loader");
+  if (!loader) return;
   gsap.to(".loader__count", { duration: 0.8, ease: 'power2.in', y: "100%", delay: 1.8 });
   gsap.to(".loader__wrapper", { duration: 0.8, ease: 'power4.in', y: "-100%", delay: 2.2 });
   setTimeout(() => {
-    document.getElementById("loader").classList.add("loaded");
+    loader.classList.add("loaded");
   }, 3200);
 }
 
