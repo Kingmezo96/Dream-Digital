@@ -498,7 +498,30 @@ body {
    Keeps the original Rayo animation, but matches the dark navigation style
    used across the rest of the site. */
 .mxd-menu__wrapper {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  min-height: 100vh !important;
+  min-height: 100svh !important;
   padding: 0 !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  background-color: #161616 !important;
+}
+
+.mxd-menu__base {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100svh !important;
+  background-color: #161616 !important;
+}
+
+.mxd-menu__contain {
+  min-height: 100vh !important;
+  min-height: 100svh !important;
+  background-color: #161616 !important;
 }
 
 .mxd-nav__hamburger.nav-open .hamburger__base,
